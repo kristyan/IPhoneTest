@@ -18,6 +18,7 @@
 #import "Membership.h"
 #import "MembershipsTableViewController.h"
 #import "MemberProfileTableViewController.h"
+#import "LoginViewController.h"
 
 @implementation TableTestAppDelegate
 
@@ -66,8 +67,6 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:membershipsViewController];
 	
-	
-	
 	MemberProfileTableViewController* memberProfileTableViewController = [[MemberProfileTableViewController alloc] init];
     
     NSArray *viewControllers = [NSArray arrayWithObjects:navController, memberProfileTableViewController, nil];
@@ -76,8 +75,17 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	[tabBarController setViewControllers:viewControllers];
 	
-	[window setRootViewController:tabBarController];
+	BOOL loggedIn = FALSE;
 	
+	if (loggedIn) {
+	    [window setRootViewController:tabBarController];
+	}
+	else {
+		LoginViewController *loginViewController = [[LoginViewController alloc] init];
+		[window setRootViewController:loginViewController];
+		[loginViewController release];
+	}
+
 	[self.window makeKeyAndVisible];
     
     return YES;

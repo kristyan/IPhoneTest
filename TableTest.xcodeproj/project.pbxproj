@@ -10,6 +10,8 @@
 		014C4C3313715BC500FC4162 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 014C4C3213715BC500FC4162 /* icon.png */; };
 		014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */; };
 		014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */; };
+		014C4D8F1379796B00FC4162 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D8D1379796B00FC4162 /* LoginViewController.m */; };
+		014C4D901379796B00FC4162 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014C4D8E1379796B00FC4162 /* LoginViewController.xib */; };
 		01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */; };
 		01FB7EC31369D7F800EFF625 /* MembershipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */; };
 		01FB7ED01369DA7000EFF625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7ECF1369DA7000EFF625 /* BaseModel.m */; };
@@ -118,6 +120,9 @@
 		014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamActivityTableViewController.m; sourceTree = "<group>"; };
 		014C4D7113795D8800FC4162 /* MemberProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberProfileTableViewController.h; sourceTree = "<group>"; };
 		014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberProfileTableViewController.m; sourceTree = "<group>"; };
+		014C4D8C1379796B00FC4162 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		014C4D8D1379796B00FC4162 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		014C4D8E1379796B00FC4162 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		01BD571B136A1D5D00965646 /* MemberItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberItemCell.h; sourceTree = "<group>"; };
 		01BD571C136A1D5D00965646 /* MemberItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberItemCell.m; sourceTree = "<group>"; };
 		01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembershipsTableViewController.h; sourceTree = "<group>"; };
@@ -194,6 +199,9 @@
 				01BD571C136A1D5D00965646 /* MemberItemCell.m */,
 				01FB7F4F1369E1A800EFF625 /* Membership.m */,
 				01FB7F661369E32100EFF625 /* Environment.h */,
+				014C4D8C1379796B00FC4162 /* LoginViewController.h */,
+				014C4D8D1379796B00FC4162 /* LoginViewController.m */,
+				014C4D8E1379796B00FC4162 /* LoginViewController.xib */,
 				01FB7F671369E32100EFF625 /* Environment.m */,
 				01FB7ECF1369DA7000EFF625 /* BaseModel.m */,
 				01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */,
@@ -393,6 +401,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				014C4C3313715BC500FC4162 /* icon.png in Resources */,
+				014C4D901379796B00FC4162 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +421,7 @@
 				01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */,
 				014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */,
 				014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */,
+				014C4D8F1379796B00FC4162 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
