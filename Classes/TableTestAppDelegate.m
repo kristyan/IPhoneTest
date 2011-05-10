@@ -17,6 +17,7 @@
 #import "Environment.h"
 #import "Membership.h"
 #import "MembershipsTableViewController.h"
+#import "MemberProfileTableViewController.h"
 
 @implementation TableTestAppDelegate
 
@@ -59,12 +60,25 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 		
 	objectManager.router = router;
 	
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
 	membershipsViewController = [[MembershipsTableViewController alloc] init];
 	
-	[window setRootViewController:membershipsViewController];
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:membershipsViewController];
+	
+	
+	
+	MemberProfileTableViewController* memberProfileTableViewController = [[MemberProfileTableViewController alloc] init];
     
-    [self.window makeKeyAndVisible];
+    NSArray *viewControllers = [NSArray arrayWithObjects:navController, memberProfileTableViewController, nil];
+	[navController release];
+	[memberProfileTableViewController release];
+	
+	[tabBarController setViewControllers:viewControllers];
+	
+	[window setRootViewController:tabBarController];
+	
+	[self.window makeKeyAndVisible];
     
     return YES;
 }
@@ -120,6 +134,7 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 
 - (void)dealloc {
     [window release];
+	[membershipsViewController release];
     [super dealloc];
 }
 

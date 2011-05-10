@@ -1,7 +1,7 @@
 TTableTest
 v7
 r0
-t326215162.089302
+t326721606.880337
 cCheck dependencies
 cProcessInfoPlistFile /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/Info.plist TableTest-Info.plist
 cCompileXIB /Users/kris/code/TableTest/MainWindow.xib
@@ -14,6 +14,8 @@ cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-no
 cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o /Users/kris/code/TableTest/Classes/Membership.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Environment.o /Users/kris/code/TableTest/Classes/Environment.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o /Users/kris/code/TableTest/Classes/MemberItemCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityTableViewController.o /Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberProfileTableViewController.o /Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest normal i386
 cGenerateDSYMFile /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest
 cTouch /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app
@@ -115,6 +117,18 @@ s2548
 i"MemberItemCell.h"
 i"Membership.h"
 
+N/Users/kris/code/TableTest/Classes/MemberProfileTableViewController.h
+c000000004DC92608000000000000010C
+t1305028104
+s268
+i<UIKit/UIKit.h>
+
+N/Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m
+c000000004DC928A90000000000001166
+t1305028777
+s4454
+i"MemberProfileTableViewController.h"
+
 N/Users/kris/code/TableTest/Classes/Membership.h
 c000000004DC12B11000000000000042D
 t1304505105
@@ -129,19 +143,20 @@ i"Membership.h"
 i"Environment.h"
 
 N/Users/kris/code/TableTest/Classes/MembershipsTableViewController.h
-c000000004DB9D4830000000000000160
-t1304024195
-s352
+c000000004DC9187D00000000000001CA
+t1305024637
+s458
 i<UIKit/UIKit.h>
 i<RestKit/RestKit.h>
 
 N/Users/kris/code/TableTest/Classes/MembershipsTableViewController.m
-c000000004DC1421700000000000009FF
-t1304510999
-s2559
+c000000004DC920BA0000000000000E43
+t1305026746
+s3651
 i"MembershipsTableViewController.h"
 i"Membership.h"
 i"MemberItemCell.h"
+i"TeamActivityTableViewController.h"
 
 N/Users/kris/code/TableTest/Classes/TableTestAppDelegate.h
 c000000004DB9A17C00000000000001B2
@@ -150,9 +165,9 @@ s434
 i<UIKit/UIKit.h>
 
 N/Users/kris/code/TableTest/Classes/TableTestAppDelegate.m
-c000000004DC13EB000000000000011C7
-t1304510128
-s4551
+c000000004DC92897000000000000144B
+t1305028759
+s5195
 i"TableTestAppDelegate.h"
 i<RestKit/RestKit.h>
 i<RestKit/ObjectMapping/RKDynamicRouter.h>
@@ -160,6 +175,31 @@ i<RestKit/ObjectMapping/RKRailsRouter.h>
 i"Environment.h"
 i"Membership.h"
 i"MembershipsTableViewController.h"
+i"MemberProfileTableViewController.h"
+
+N/Users/kris/code/TableTest/Classes/TeamActivityTableViewController.h
+c000000004DC9159D000000000000010A
+t1305023901
+s266
+i<UIKit/UIKit.h>
+
+N/Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m
+c000000004DC9228500000000000012A5
+t1305027205
+s4773
+i"TeamActivityTableViewController.h"
+
+N/Users/kris/code/TableTest/Classes/TeamActivityViewController.h
+c000000004DC915410000000000000100
+t1305023809
+s256
+i<UIKit/UIKit.h>
+
+N/Users/kris/code/TableTest/Classes/TeamActivityViewController.m
+c000000004DC9154100000000000012D0
+t1305023809
+s4816
+i"TeamActivityViewController.h"
 
 N/Users/kris/code/TableTest/Classes/membership.h
 c000000004DB9AA3F00000000000003F4
@@ -396,8 +436,8 @@ i"../Network/Network.h"
 i"RKObjectMappable.h"
 
 N/Users/kris/code/TableTest/RestKit/Build/RestKit/RestKit.h
-c000000004DC16E7900000000000000E3
-t1304522361
+c000000004DC928C600000000000000E3
+t1305028806
 s227
 i"Network/Network.h"
 i"Support/Support.h"
@@ -434,11 +474,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app
-t1304522362
+t1305028806
 s238
 
 N/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM
-t1304522362
+t1305028806
 s102
 
 N/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/Info.plist
@@ -454,15 +494,15 @@ t1304011316
 s8
 
 N/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest
-t1304522362
-s371776
+t1305028806
+s379548
 
 N/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/icon.png
 t1304503377
 s6152
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/BaseModel.o
-t1304522361
+t1305028806
 s9256
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Environment.o
@@ -470,25 +510,37 @@ t1304509524
 s4840
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o
-t1304522361
+t1305028806
 s46232
 
+N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberProfileTableViewController.o
+t1305028780
+s41044
+
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o
-t1304522361
+t1305028806
 s23936
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MembershipsTableViewController.o
-t1304522361
-s54288
+t1305028806
+s57068
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTest.LinkFileList
-c000000004DC11C770000000000000364
-t1304501367
-s868
+c000000004DC9287A000000000000047F
+t1305028730
+s1151
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTestAppDelegate.o
-t1304522361
-s57352
+t1305028806
+s61596
+
+N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityTableViewController.o
+t1305027210
+s41836
+
+N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityViewController.o
+t2
+s0
 
 N/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/main.o
 t1304013250
@@ -524,11 +576,11 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies326215161#326215161#0(0"0(0#1#0"8628989344#0"0#
+lSLF07#2@18"Check dependencies326721606#326721606#0(0"0(0#1#0"8641719456#0"0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/BaseModel.o /Users/kris/code/TableTest/Classes/BaseModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s326215161.790481
-e326215161.902054
+s326721606.535275
+e326721606.661430
 r1
 xCompileC
 xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/BaseModel.o
@@ -542,7 +594,7 @@ o/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: 'BaseModel' may not
 o/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: (Messages without a matching method signature
 o/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: will be assumed to return 'id' and accept
 o/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: '...' as arguments.)
-lSLF07#2@54"Compile /Users/kris/code/TableTest/Classes/BaseModel.m326215161#326215161#0(487"/Users/kris/code/TableTest/Classes/BaseModel.m: In function '-[BaseModel isNewRecord]':/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: 'BaseModel' may not respond to '-primaryKeyValue'/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: (Messages without a matching method signature/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: will be assumed to return 'id' and accept/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: '...' as arguments.)2(22@49"'BaseModel' may not respond to '-primaryKeyValue'326215161#88#110#0(6@46"/Users/kris/code/TableTest/Classes/BaseModel.m325704429#28#0#28#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)326215161#198#106#0(6@46"/Users/kris/code/TableTest/Classes/BaseModel.m325704429#28#0#28#0#0"0(0#0#46"/Users/kris/code/TableTest/Classes/BaseModel.m8609186368#1856"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/BaseModel.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/BaseModel.o0#
+lSLF07#2@54"Compile /Users/kris/code/TableTest/Classes/BaseModel.m326721606#326721606#0(487"/Users/kris/code/TableTest/Classes/BaseModel.m: In function '-[BaseModel isNewRecord]':/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: 'BaseModel' may not respond to '-primaryKeyValue'/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: (Messages without a matching method signature/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: will be assumed to return 'id' and accept/Users/kris/code/TableTest/Classes/BaseModel.m:28: warning: '...' as arguments.)2(22@49"'BaseModel' may not respond to '-primaryKeyValue'326721606#88#110#0(6@46"/Users/kris/code/TableTest/Classes/BaseModel.m325704429#28#0#28#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)326721606#198#106#0(6@46"/Users/kris/code/TableTest/Classes/BaseModel.m325704429#28#0#28#0#0"0(0#0#46"/Users/kris/code/TableTest/Classes/BaseModel.m8646072832#1856"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/BaseModel.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/BaseModel.o0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Environment.o /Users/kris/code/TableTest/Classes/Environment.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s326202324.838029
@@ -558,8 +610,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@56"Compile /Users/kris/code/TableTest/Classes/Environment.m326202324#326202324#0(0"0(0#0#48"/Users/kris/code/TableTest/Classes/Environment.m8637776288#1860"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/Environment.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Environment.o0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o /Users/kris/code/TableTest/Classes/MemberItemCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s326215161.902289
-e326215161.984988
+s326721606.661805
+e326721606.763289
 r1
 xCompileC
 xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o
@@ -568,11 +620,24 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/kris/code/TableTest/Classes/MemberItemCell.m326215161#326215161#0(0"0(0#0#51"/Users/kris/code/TableTest/Classes/MemberItemCell.m8633188416#1866"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/MemberItemCell.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o0#
+lSLF07#2@59"Compile /Users/kris/code/TableTest/Classes/MemberItemCell.m326721606#326721606#0(0"0(0#0#51"/Users/kris/code/TableTest/Classes/MemberItemCell.m8641164800#1866"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/MemberItemCell.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberItemCell.o0#
+
+CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberProfileTableViewController.o /Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326721580.404327
+e326721580.509367
+r1
+xCompileC
+xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberProfileTableViewController.o
+x/Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m326721580#326721580#0(0"0(0#0#69"/Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m8644061600#1902"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/MemberProfileTableViewController.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MemberProfileTableViewController.o0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o /Users/kris/code/TableTest/Classes/Membership.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s326215161.791454
-e326215161.916597
+s326721606.541109
+e326721606.713604
 r1
 xCompileC
 xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o
@@ -581,11 +646,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/kris/code/TableTest/Classes/Membership.m326215161#326215161#0(0"0(0#0#47"/Users/kris/code/TableTest/Classes/Membership.m8635088128#1858"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/Membership.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o0#
+lSLF07#2@55"Compile /Users/kris/code/TableTest/Classes/Membership.m326721606#326721606#0(0"0(0#0#47"/Users/kris/code/TableTest/Classes/Membership.m8645890016#1858"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/Membership.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/Membership.o0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MembershipsTableViewController.o /Users/kris/code/TableTest/Classes/MembershipsTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s326215161.789725
-e326215161.916910
+s326721606.529264
+e326721606.715422
 r1
 xCompileC
 xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MembershipsTableViewController.o
@@ -594,11 +659,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/kris/code/TableTest/Classes/MembershipsTableViewController.m326215161#326215161#0(0"0(0#0#67"/Users/kris/code/TableTest/Classes/MembershipsTableViewController.m8624827296#1898"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/MembershipsTableViewController.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MembershipsTableViewController.o0#
+lSLF07#2@75"Compile /Users/kris/code/TableTest/Classes/MembershipsTableViewController.m326721606#326721606#0(0"0(0#0#67"/Users/kris/code/TableTest/Classes/MembershipsTableViewController.m8621463104#1898"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/MembershipsTableViewController.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/MembershipsTableViewController.o0#
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTestAppDelegate.o /Users/kris/code/TableTest/Classes/TableTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s326215161.788662
-e326215161.919994
+s326721606.527986
+e326721606.695129
 r1
 xCompileC
 xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTestAppDelegate.o
@@ -607,7 +672,23 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/kris/code/TableTest/Classes/TableTestAppDelegate.m326215161#326215161#0(0"0(0#0#57"/Users/kris/code/TableTest/Classes/TableTestAppDelegate.m8628826592#1878"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/TableTestAppDelegate.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTestAppDelegate.o0#
+lSLF07#2@65"Compile /Users/kris/code/TableTest/Classes/TableTestAppDelegate.m326721606#326721606#0(0"0(0#0#57"/Users/kris/code/TableTest/Classes/TableTestAppDelegate.m8644898400#1878"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/TableTestAppDelegate.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTestAppDelegate.o0#
+
+CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityTableViewController.o /Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326720010.647573
+e326720010.760438
+r1
+xCompileC
+xbuild/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityTableViewController.o
+x/Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m326720010#326720010#0(0"0(0#0#68"/Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m8641926944#1900"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -IRestKit/Build -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -include /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-bhedxdkjtjzzkidqwsbfmmziyuzc/TableTest_Prefix.pch -c /Users/kris/code/TableTest/Classes/TeamActivityTableViewController.m -o /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityTableViewController.o0#
+
+CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TeamActivityViewController.o /Users/kris/code/TableTest/Classes/TeamActivityViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/main.o /Users/kris/code/TableTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s325706050.110347
@@ -653,23 +734,23 @@ xicon.png
 lSLF07#2@13"Copy icon.png326196177#326196177#0(0"0(0#0#35"/Users/kris/code/TableTest/icon.png8620965696#432"    cd /Users/kris/code/TableTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/kris/code/TableTest/icon.png /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app0#
 
 CGenerateDSYMFile /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest
-s326215162.035016
-e326215162.086984
+s326721606.828579
+e326721606.878406
 r1
 xGenerateDSYMFile
 x/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM
 x/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest
-lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/TableTest.app.dSYM build/Debug-iphonesimulator/TableTest.app/TableTest326215162#326215162#0(0"0(0#0#78"/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest8630641280#353"    cd /Users/kris/code/TableTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest -o /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM0#
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/TableTest.app.dSYM build/Debug-iphonesimulator/TableTest.app/TableTest326721606#326721606#0(0"0(0#0#78"/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest8645172032#353"    cd /Users/kris/code/TableTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest -o /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app.dSYM0#
 
 CLd /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest normal i386
-s326215161.985065
-e326215162.034939
+s326721606.763384
+e326721606.828466
 r1
 xLd
 x/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest
 xnormal
 xi386
-lSLF07#2@83"Link /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest326215161#326215162#0(0"0(0#0#0"8632473568#1397"    cd /Users/kris/code/TableTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/kris/code/TableTest/build/Debug-iphonesimulator -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -filelist /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTest.LinkFileList -mmacosx-version-min=10.6 -ObjC -all_load -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitSupport.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitObjectMapping.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitNetwork.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitJSONParserYAJL.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitCoreData.a -framework CFNetwork -framework CoreData -framework MobileCoreServices -framework SystemConfiguration -o /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest0#
+lSLF07#2@83"Link /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest326721606#326721606#0(0"0(0#0#0"8633784768#1397"    cd /Users/kris/code/TableTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/kris/code/TableTest/build/Debug-iphonesimulator -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -filelist /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/Objects-normal/i386/TableTest.LinkFileList -mmacosx-version-min=10.6 -ObjC -all_load -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitSupport.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitObjectMapping.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitNetwork.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitJSONParserYAJL.a /Users/kris/code/TableTest/RestKit/Build/Debug-iphonesimulator/libRestKitCoreData.a -framework CFNetwork -framework CoreData -framework MobileCoreServices -framework SystemConfiguration -o /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/TableTest0#
 
 CProcessInfoPlistFile /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app/Info.plist TableTest-Info.plist
 s325704116.006550
@@ -707,10 +788,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@31"Precompile TableTest_Prefix.pch325704116#325704117#0(0"0(0#0#47"/Users/kris/code/TableTest/TableTest_Prefix.pch8629546368#2032"    cd /Users/kris/code/TableTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Users/kris/.rvm/gems/ree-1.8.7-2011.03/bin:/Users/kris/.rvm/gems/ree-1.8.7-2011.03@global/bin:/Users/kris/.rvm/rubies/ree-1.8.7-2011.03/bin:/Users/kris/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/usr/local/mysql/bin:/Applications/TextMate.app/Contents/Resources/"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-generated-files.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-own-target-headers.hmap -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-all-target-headers.hmap -iquote /Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/TableTest-project-headers.hmap -F/Users/kris/code/TableTest/build/Debug-iphonesimulator -I/Users/kris/code/TableTest/build/Debug-iphonesimulator/include -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources/i386 -I/Users/kris/code/TableTest/build/TableTest.build/Debug-iphonesimulator/TableTest.build/DerivedSources -c /Users/kris/code/TableTest/TableTest_Prefix.pch -o /var/folders/YZ/YZuDb8qoF7qYQV8a6XM1tk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TableTest_Prefix-dnfycefglbgsmxcsliszlusaophq/TableTest_Prefix.pch.gch0#
 
 CTouch /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app
-s326215162.087073
-e326215162.089261
+s326721606.878480
+e326721606.880303
 r1
 xTouch
 x/Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app
-lSLF07#2@74"Touch /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app326215162#326215162#0(0"0(0#0#0"8629746944#256"    cd /Users/kris/code/TableTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app0#
+lSLF07#2@74"Touch /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app326721606#326721606#0(0"0(0#0#0"8644391904#256"    cd /Users/kris/code/TableTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kris/code/TableTest/build/Debug-iphonesimulator/TableTest.app0#
 

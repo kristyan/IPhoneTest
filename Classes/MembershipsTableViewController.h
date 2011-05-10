@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
 
+@class TeamActivityTableViewController;	
+
 
 @interface MembershipsTableViewController : UITableViewController <RKObjectLoaderDelegate> {
-    NSMutableArray* memberships;   
+    NSMutableArray* memberships;
+	TeamActivityTableViewController *teamActivityTableViewController;
 }
 
 @end

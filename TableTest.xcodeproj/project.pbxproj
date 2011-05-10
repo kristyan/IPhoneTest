@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		014C4C3313715BC500FC4162 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 014C4C3213715BC500FC4162 /* icon.png */; };
+		014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */; };
+		014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */; };
 		01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */; };
 		01FB7EC31369D7F800EFF625 /* MembershipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */; };
 		01FB7ED01369DA7000EFF625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7ECF1369DA7000EFF625 /* BaseModel.m */; };
@@ -112,6 +114,10 @@
 
 /* Begin PBXFileReference section */
 		014C4C3213715BC500FC4162 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		014C4D0A13794D1D00FC4162 /* TeamActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamActivityTableViewController.h; sourceTree = "<group>"; };
+		014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamActivityTableViewController.m; sourceTree = "<group>"; };
+		014C4D7113795D8800FC4162 /* MemberProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberProfileTableViewController.h; sourceTree = "<group>"; };
+		014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberProfileTableViewController.m; sourceTree = "<group>"; };
 		01BD571B136A1D5D00965646 /* MemberItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberItemCell.h; sourceTree = "<group>"; };
 		01BD571C136A1D5D00965646 /* MemberItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberItemCell.m; sourceTree = "<group>"; };
 		01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembershipsTableViewController.h; sourceTree = "<group>"; };
@@ -192,6 +198,10 @@
 				01FB7ECF1369DA7000EFF625 /* BaseModel.m */,
 				01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */,
 				01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */,
+				014C4D7113795D8800FC4162 /* MemberProfileTableViewController.h */,
+				014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */,
+				014C4D0A13794D1D00FC4162 /* TeamActivityTableViewController.h */,
+				014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */,
 				1D3623240D0F684500981E51 /* TableTestAppDelegate.h */,
 				1D3623250D0F684500981E51 /* TableTestAppDelegate.m */,
 			);
@@ -400,6 +410,8 @@
 				01FB7F501369E1A800EFF625 /* Membership.m in Sources */,
 				01FB7F681369E32100EFF625 /* Environment.m in Sources */,
 				01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */,
+				014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */,
+				014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
