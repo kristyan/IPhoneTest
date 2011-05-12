@@ -7,6 +7,7 @@
 //
 
 #import "TeamActivityTableViewController.h"
+#import "LoginViewController.h"
 
 
 @implementation TeamActivityTableViewController
@@ -48,9 +49,9 @@
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
 }
 */
+
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

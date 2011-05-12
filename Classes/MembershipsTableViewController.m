@@ -80,11 +80,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-     if (!teamActivityTableViewController) {
+    if (!teamActivityTableViewController) {
 	     teamActivityTableViewController = [[TeamActivityTableViewController alloc]	init]; 
-	 }
-	      // ...
-     // Pass the selected object to the new view controller.
+	}
+	
+	
+	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:teamActivityTableViewController animated:YES];
 }
 
@@ -96,6 +97,7 @@
 
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
+	self.view.backgroundColor = [UIColor darkGrayColor];
 	RKObjectManager* manager = [RKObjectManager sharedManager];
     [manager loadObjectsAtResourcePath:@"/users/367/teams" objectClass:[Membership class] delegate:self];
 }	

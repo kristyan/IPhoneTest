@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
 
-
-@interface TeamActivityTableViewController : UITableViewController {
+@interface TeamActivityTableViewController : BaseTableViewController {
 
 }
 

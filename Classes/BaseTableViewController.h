@@ -1,5 +1,5 @@
 //
-//  MemberProfileTableViewController.h
+//  BaseTableViewController.h
 //  TableTest
 //
 //  Created by kristyan connolly on 10/05/2011.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseTableViewController.h"
 
-@interface MemberProfileTableViewController : BaseTableViewController {
+
+@interface BaseTableViewController : UITableViewController {
 
 }
 

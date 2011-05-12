@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0128EBB31379DAD40061E865 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0128EBB21379DAD40061E865 /* BaseTableViewController.m */; };
 		014C4C3313715BC500FC4162 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 014C4C3213715BC500FC4162 /* icon.png */; };
 		014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */; };
 		014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */; };
 		014C4D8F1379796B00FC4162 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C4D8D1379796B00FC4162 /* LoginViewController.m */; };
 		014C4D901379796B00FC4162 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014C4D8E1379796B00FC4162 /* LoginViewController.xib */; };
 		01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */; };
+		01C64A00137BE89900246089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C649FF137BE89900246089 /* User.m */; };
 		01FB7EC31369D7F800EFF625 /* MembershipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */; };
 		01FB7ED01369DA7000EFF625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7ECF1369DA7000EFF625 /* BaseModel.m */; };
 		01FB7F2A1369DCEA00EFF625 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FB7F1B1369DCA800EFF625 /* libRestKitSupport.a */; };
@@ -115,6 +117,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0128EBB11379DAD40061E865 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		0128EBB21379DAD40061E865 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		014C4C3213715BC500FC4162 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		014C4D0A13794D1D00FC4162 /* TeamActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamActivityTableViewController.h; sourceTree = "<group>"; };
 		014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamActivityTableViewController.m; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		014C4D8E1379796B00FC4162 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		01BD571B136A1D5D00965646 /* MemberItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberItemCell.h; sourceTree = "<group>"; };
 		01BD571C136A1D5D00965646 /* MemberItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberItemCell.m; sourceTree = "<group>"; };
+		01C649FE137BE89900246089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		01C649FF137BE89900246089 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembershipsTableViewController.h; sourceTree = "<group>"; };
 		01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembershipsTableViewController.m; sourceTree = "<group>"; };
 		01FB7ECE1369DA7000EFF625 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				01BD571C136A1D5D00965646 /* MemberItemCell.m */,
 				01FB7F4F1369E1A800EFF625 /* Membership.m */,
 				01FB7F661369E32100EFF625 /* Environment.h */,
+				01C649FE137BE89900246089 /* User.h */,
+				01C649FF137BE89900246089 /* User.m */,
 				014C4D8C1379796B00FC4162 /* LoginViewController.h */,
 				014C4D8D1379796B00FC4162 /* LoginViewController.m */,
 				014C4D8E1379796B00FC4162 /* LoginViewController.xib */,
@@ -208,6 +216,8 @@
 				01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */,
 				014C4D7113795D8800FC4162 /* MemberProfileTableViewController.h */,
 				014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */,
+				0128EBB11379DAD40061E865 /* BaseTableViewController.h */,
+				0128EBB21379DAD40061E865 /* BaseTableViewController.m */,
 				014C4D0A13794D1D00FC4162 /* TeamActivityTableViewController.h */,
 				014C4D0B13794D1D00FC4162 /* TeamActivityTableViewController.m */,
 				1D3623240D0F684500981E51 /* TableTestAppDelegate.h */,
@@ -422,6 +432,8 @@
 				014C4D0C13794D1D00FC4162 /* TeamActivityTableViewController.m in Sources */,
 				014C4D7313795D8800FC4162 /* MemberProfileTableViewController.m in Sources */,
 				014C4D8F1379796B00FC4162 /* LoginViewController.m in Sources */,
+				0128EBB31379DAD40061E865 /* BaseTableViewController.m in Sources */,
+				01C64A00137BE89900246089 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

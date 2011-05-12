@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
-
-@interface LoginViewController : UIViewController {
-
+@interface LoginViewController : UIViewController <UserAuthenticationDelegate> {
+	IBOutlet UITextField *usernameField;
+	IBOutlet UITextField *passwordField;
 }
 
+@property (nonatomic, retain) UITextField *usernameField;
+@property (nonatomic, retain) UITextField *passwordField;
+
+-(IBAction) loginClicked: (id) sender;
 @end

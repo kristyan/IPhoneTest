@@ -7,35 +7,21 @@
 //
 
 #import "LoginViewController.h"
+#import "User.h"
 
 
 @implementation LoginViewController
+@synthesize usernameField;
+@synthesize passwordField;
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+-(IBAction) loginClicked: (id) sender {
+	NSLog(@"email = %@", usernameField.text);
+	NSLog(@"password = %@", passwordField.text);
+    
+	// Login
+	User* user = [User currentUser];		
+	[user loginWithUsername:usernameField.text andPassword:passwordField.text delegate:self];
+}	
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -50,6 +36,28 @@
     // e.g. self.myOutlet = nil;
 }
 
+
+#pragma mark UserAuthenticationDelegate methods
+
+- (void)userDidLogin:(User*)user {
+	NSLog(@"Callback to userDidLogin");
+	// dismiss the login screen
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)user:(User*)user didFailSignUpWithError:(NSError*)error {	
+	//TTAlert([error localizedDescription]);
+	NSLog(@"Callback to didFailSignUpWithError");
+}
+
+- (void)user:(User*)user didFailLoginWithError:(NSError*)error {
+	NSLog(@"Callback to didFailLoginWithError");
+	/*[[[[UIAlertView alloc] initWithTitle:@"Error"
+								 message:[error localizedDescription]
+								delegate:nil
+					   cancelButtonTitle:@"OK"
+					   otherButtonTitles:nil] autorelease] show];*/
+}
 
 - (void)dealloc {
     [super dealloc];

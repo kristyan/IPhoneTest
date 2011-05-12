@@ -16,6 +16,7 @@
 // Teamer
 #import "Environment.h"
 #import "Membership.h"
+#import	"User.h"
 #import "MembershipsTableViewController.h"
 #import "MemberProfileTableViewController.h"
 #import "LoginViewController.h"
@@ -24,7 +25,7 @@
 
 @synthesize window;
 
-static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
+static NSString* const kDBAccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -38,7 +39,15 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	// Set nil for any attributes we expect to appear in the payload, but do not
 	objectManager.mapper.missingElementMappingPolicy = RKSetNilForMissingElementMappingPolicy;
 
-	[objectManager.client setValue:@"vIMHjQcmj03GFMrfZe2X" forHTTPHeaderField:accessTokenHTTPHeaderField];
+	//[objectManager.client setValue:@"vIMHjQcmj03GFMrfZe2X" forHTTPHeaderField:accessTokenHTTPHeaderField];
+	// Initialize object store
+	// We are using the Core Data support, so we have initialized a managed object store backed
+	// with a SQLite database. We are also utilizing the managed object cache support to provide
+	// offline access to locally cached content.
+	objectManager.objectStore = [[[RKManagedObjectStore alloc] initWithStoreFilename:@"Teamer.sqlite"] autorelease];
+	//objectManager.objectStore.managedObjectCache = [[DBManagedObjectCache new] autorelease];
+	
+	//[objectManager registerClass:[User class] forElementNamed:@"user"];
 	
 	// Set Up Router
 	// The router is responsible for generating the appropriate resource path to
@@ -61,6 +70,19 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 		
 	objectManager.router = router;
 	
+    // Register for authentication notifications
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:DBUserDidLoginNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:DBUserDidLogoutNotification object:nil];
+	
+	// Initialize authenticated access if we have a logged in current User reference
+	User* user = [User currentUser];
+	if ([user isLoggedIn]) {
+		NSLog(@"Found logged in User record for username '%@' [Access Token: %@]", user.username, user.singleAccessToken);
+		[objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:kDBAccessTokenHTTPHeaderField];
+	}
+	
+	
+	// configure controllers
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
 	membershipsViewController = [[MembershipsTableViewController alloc] init];
@@ -75,7 +97,7 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	[tabBarController setViewControllers:viewControllers];
 	
-	BOOL loggedIn = FALSE;
+	BOOL loggedIn = TRUE;
 	
 	if (loggedIn) {
 	    [window setRootViewController:tabBarController];
@@ -140,7 +162,16 @@ static NSString* const accessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 }
 
 
+// Watch for login/logout events and set the Access Token HTTP Header
+- (void)setAccessTokenHeaderFromAuthenticationNotification:(NSNotification*)notification {
+	User* user = (User*) [notification object];
+	RKObjectManager* objectManager = [RKObjectManager sharedManager];
+	[objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:kDBAccessTokenHTTPHeaderField];
+}
+
+
 - (void)dealloc {
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
     [window release];
 	[membershipsViewController release];
     [super dealloc];
