@@ -114,9 +114,14 @@ extern NSString* const DBUserDidLogoutNotification; // Posted when the User logs
 - (void)userDidLogin:(User*)user;
 
 /**
+ * Sent to the delegate when the User failed login due to connection problems
+ */
+- (void)user:(User*)user didFailLoginWithConnectionError:(NSError*)error;
+
+/**
  * Sent to the delegate when the User failed login for a specific reason
  */
-- (void)user:(User*)user didFailLoginWithError:(NSError*)error;
+- (void)user:(User*)user didFailLoginWithStatusError:(NSString*)error andCode:(NSInteger)code;
 
 /**
  * Sent to the delegate when the User logged out of the system

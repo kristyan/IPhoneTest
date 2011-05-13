@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "User.h"
 
-@interface LoginViewController : UIViewController <UserAuthenticationDelegate> {
+@interface LoginViewController : UIViewController <UserAuthenticationDelegate, UITextFieldDelegate> {
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;
+	IBOutlet UILabel *statusLabel;
 }
 
 @property (nonatomic, retain) UITextField *usernameField;
 @property (nonatomic, retain) UITextField *passwordField;
+@property (nonatomic, retain) UILabel *statusLabel;
 
 -(IBAction) loginClicked: (id) sender;
 @end

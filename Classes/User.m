@@ -33,8 +33,7 @@ static User* currentUser = nil;
  * are mapped to properties on the object
  */
 + (NSDictionary*)elementToPropertyMappings {
-	NSLog(@"Got Here...");
-	return [NSDictionary dictionaryWithKeysAndObjects:
+    return [NSDictionary dictionaryWithKeysAndObjects:
 			@"id", @"userID",
 			@"email", @"email",
 			@"single_access_token", @"singleAccessToken",
@@ -92,12 +91,12 @@ static User* currentUser = nil;
  * set so that the login response gets mapped back into this object, populating the
  * properties according to the mappings declared in elementToPropertyMappings.
  */
-- (void)loginWithUsername:(NSString*)username andPassword:(NSString*)password delegate:(NSObject<UserAuthenticationDelegate>*)delegate {
+- (void)loginWithUsername:(NSString*)user andPassword:(NSString*)pass delegate:(NSObject<UserAuthenticationDelegate>*)delegate {
 	_delegate = delegate;
 	
 	RKObjectLoader* objectLoader = [[RKObjectManager sharedManager] objectLoaderWithResourcePath:@"/session.json" delegate:self];
 	objectLoader.method = RKRequestMethodPOST;
-	objectLoader.params = [NSDictionary dictionaryWithKeysAndObjects:@"email", @"kris@local.com", @"password", @"password", nil];	
+	objectLoader.params = [NSDictionary dictionaryWithKeysAndObjects:@"email", user, @"password", pass, nil];	
 	objectLoader.targetObject = self;
 	[objectLoader send];
 }
@@ -131,10 +130,8 @@ static User* currentUser = nil;
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray *)objects {
 	// NOTE: We don't need objects because self is the target of the mapping operation
-	NSLog(@"Calling Did load objects");
 	
 	if ([objectLoader isPOST]) {
-		NSLog(@"Login was a success");
 		// Login was successful
 		[self loginWasSuccessful];
 	} else if ([objectLoader isDELETE]) {
@@ -153,19 +150,24 @@ static User* currentUser = nil;
 	}
 }
 
+// This Appears to be called when we have a connection error
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError*)error {	
 	if ([objectLoader isPOST]) {
 		// Login failed
-		NSLog(@"Login Failed with error: %@", error);
-		if ([self.delegate respondsToSelector:@selector(user:didFailLoginWithError:)]) {
-			[self.delegate user:self didFailLoginWithError:error];
+		if ([self.delegate respondsToSelector:@selector(user:didFailLoginWithConnectionError:)]) {
+			[self.delegate user:self didFailLoginWithConnectionError:error];
 		}
 	} 
 }
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
-    NSLog(@"Unexpected response:  %@", [[objectLoader response ] bodyAsString] );
-	
+    NSInteger statusCode = [[objectLoader response] statusCode];
+	NSString *error = [[objectLoader response ] bodyAsString]; 
+	if (statusCode == 400) {
+		if ([self.delegate respondsToSelector:@selector(user:didFailLoginWithStatusError:andCode:)]) {
+			[self.delegate user:self didFailLoginWithStatusError:error andCode:statusCode];
+		}
+	}
 }	
 
 - (BOOL)isLoggedIn {

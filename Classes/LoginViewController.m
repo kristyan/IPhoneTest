@@ -13,12 +13,10 @@
 @implementation LoginViewController
 @synthesize usernameField;
 @synthesize passwordField;
+@synthesize statusLabel;
 
 -(IBAction) loginClicked: (id) sender {
-	NSLog(@"email = %@", usernameField.text);
-	NSLog(@"password = %@", passwordField.text);
-    
-	// Login
+	// Log the user in
 	User* user = [User currentUser];		
 	[user loginWithUsername:usernameField.text andPassword:passwordField.text delegate:self];
 }	
@@ -30,10 +28,21 @@
     // Release any cached data, images, etc. that aren't in use.
 }
 
+-  (void) viewDidLoad {
+    [super viewDidLoad];
+	[usernameField setDelegate:self];
+	[passwordField setDelegate:self];
+	
+}	
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    [usernameField release];
+	usernameField = nil;
+	[passwordField release];
+	passwordField = nil;
+	[statusLabel release];
+	statusLabel = nil;
 }
 
 
@@ -47,20 +56,31 @@
 
 - (void)user:(User*)user didFailSignUpWithError:(NSError*)error {	
 	//TTAlert([error localizedDescription]);
-	NSLog(@"Callback to didFailSignUpWithError");
+	[statusLabel setText:@"Connection Error"];
 }
 
-- (void)user:(User*)user didFailLoginWithError:(NSError*)error {
-	NSLog(@"Callback to didFailLoginWithError");
-	/*[[[[UIAlertView alloc] initWithTitle:@"Error"
-								 message:[error localizedDescription]
-								delegate:nil
-					   cancelButtonTitle:@"OK"
-					   otherButtonTitles:nil] autorelease] show];*/
+- (void)user:(User*)user didFailLoginWithConnectionError:(NSError*)error {
+	NSLog(@"didFailLoginWithConnectionError  %@", error);
+	[statusLabel setText:@"Connection Error"];
 }
+
+
+- (void)user:(User*)user didFailLoginWithStatusError:(NSString*)error andCode:(NSInteger)code {
+   [statusLabel setText:error];
+}	
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	// dismiss the text field keyboard when return is clciked
+	[textField resignFirstResponder];
+	return YES;
+}
+
 
 - (void)dealloc {
     [super dealloc];
+	[usernameField release];
+	[passwordField release];
+	[statusLabel release];
 }
 
 

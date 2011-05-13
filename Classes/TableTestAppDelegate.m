@@ -97,17 +97,8 @@ static NSString* const kDBAccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	[tabBarController setViewControllers:viewControllers];
 	
-	BOOL loggedIn = TRUE;
+	[window setRootViewController:tabBarController];
 	
-	if (loggedIn) {
-	    [window setRootViewController:tabBarController];
-	}
-	else {
-		LoginViewController *loginViewController = [[LoginViewController alloc] init];
-		[window setRootViewController:loginViewController];
-		[loginViewController release];
-	}
-
 	[self.window makeKeyAndVisible];
     
     return YES;

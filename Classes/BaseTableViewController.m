@@ -27,7 +27,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+	self.view.backgroundColor = [UIColor darkGrayColor];
 	
 	// check if the current user is logged in here
 	BOOL isLoggedIn = [[User currentUser] isLoggedIn];
@@ -36,6 +37,7 @@
 		LoginViewController *loginViewController = [[LoginViewController alloc] init];
 		[self presentModalViewController:loginViewController animated:NO];
 		[loginViewController release];
+		
 	}
 }
 
