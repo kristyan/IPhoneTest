@@ -8,6 +8,7 @@
 
 #import "MembershipsTableViewController.h"
 #import "Membership.h"
+#import "User.h"
 #import "MemberItemCell.h"
 #import "TeamActivityTableViewController.h"
 
@@ -99,7 +100,10 @@
 	[super viewWillAppear:animated];
 	self.view.backgroundColor = [UIColor darkGrayColor];
 	RKObjectManager* manager = [RKObjectManager sharedManager];
-    [manager loadObjectsAtResourcePath:@"/users/367/teams" objectClass:[Membership class] delegate:self];
+	User *currentUser = [User currentUser];
+	NSLog(@"User Id = %@", [currentUser userID]);
+	NSString *path = [NSString stringWithFormat:@"/users/%@/teams", [currentUser userID]];
+    [manager loadObjectsAtResourcePath:path objectClass:[Membership class] delegate:self];
 }	
 
 - (void)didReceiveMemoryWarning {

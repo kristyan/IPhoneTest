@@ -25,7 +25,7 @@
 
 @synthesize window;
 
-static NSString* const kDBAccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
+static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -71,14 +71,13 @@ static NSString* const kDBAccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	objectManager.router = router;
 	
     // Register for authentication notifications
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:DBUserDidLoginNotification object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:DBUserDidLogoutNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:UserDidLoginNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:UserDidLogoutNotification object:nil];
 	
 	// Initialize authenticated access if we have a logged in current User reference
 	User* user = [User currentUser];
 	if ([user isLoggedIn]) {
-		NSLog(@"Found logged in User record for username '%@' [Access Token: %@]", user.username, user.singleAccessToken);
-		[objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:kDBAccessTokenHTTPHeaderField];
+	    [objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:AccessTokenHTTPHeaderField];
 	}
 	
 	
@@ -157,7 +156,7 @@ static NSString* const kDBAccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 - (void)setAccessTokenHeaderFromAuthenticationNotification:(NSNotification*)notification {
 	User* user = (User*) [notification object];
 	RKObjectManager* objectManager = [RKObjectManager sharedManager];
-	[objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:kDBAccessTokenHTTPHeaderField];
+	[objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:AccessTokenHTTPHeaderField];
 }
 
 

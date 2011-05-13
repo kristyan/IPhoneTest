@@ -9,12 +9,12 @@
 #import "User.h"
 
 // Constants
-static NSString* const kDBUserCurrentUserIDDefaultsKey = @"kDBUserCurrentUserIDDefaultsKey";
+static NSString* const UserCurrentUserIDDefaultsKey = @"userCurrentUserIDDefaultsKey";
 
 // Notifications
-NSString* const DBUserDidLoginNotification = @"DBUserDidLoginNotification";
-NSString* const DBUserDidFailLoginNotification = @"DBUserDidFailLoginNotification";
-NSString* const DBUserDidLogoutNotification = @"DBUserDidLogoutNotification";
+NSString* const UserDidLoginNotification = @"UserDidLoginNotification";
+NSString* const UserDidFailLoginNotification = @"UserDidFailLoginNotification";
+NSString* const UserDidLogoutNotification = @"UserDidLogoutNotification";
 
 // Current User singleton
 static User* currentUser = nil;
@@ -117,7 +117,7 @@ static User* currentUser = nil;
 	[User setCurrentUser:self];
 	
 	// Persist the UserID for recovery later
-	[[NSUserDefaults standardUserDefaults] setObject:self.userID forKey:kDBUserCurrentUserIDDefaultsKey];
+	[[NSUserDefaults standardUserDefaults] setObject:self.userID forKey:UserCurrentUserIDDefaultsKey];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	// Inform the delegate
@@ -125,7 +125,7 @@ static User* currentUser = nil;
 		[self.delegate userDidLogin:self];
 	}
 	
-	[[NSNotificationCenter defaultCenter] postNotificationName:DBUserDidLoginNotification object:self];
+	[[NSNotificationCenter defaultCenter] postNotificationName:UserDidLoginNotification object:self];
 }
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray *)objects {
@@ -138,7 +138,7 @@ static User* currentUser = nil;
 		// Logout was successful
 		
 		// Clear the stored credentials
-		[[NSUserDefaults standardUserDefaults] setValue:nil forKey:kDBUserCurrentUserIDDefaultsKey];
+		[[NSUserDefaults standardUserDefaults] setValue:nil forKey:UserCurrentUserIDDefaultsKey];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		
 		// Inform the delegate
@@ -146,7 +146,7 @@ static User* currentUser = nil;
 			[self.delegate userDidLogout:self];
 		}
 		
-		[[NSNotificationCenter defaultCenter] postNotificationName:DBUserDidLogoutNotification object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:UserDidLogoutNotification object:nil];
 	}
 }
 
@@ -177,6 +177,10 @@ static User* currentUser = nil;
 
 - (void)dealloc {
 	_delegate = nil;
+	[email release];
+	[username release];
+	[userID release];
+	[singleAccessToken release];
 	[super dealloc];
 }
 

@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData/CoreData.h>
 
@@ -76,8 +74,6 @@
  */
 - (void)logout;
 
-
-
 @end
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -86,8 +82,8 @@
 /**
  * Notifications
  */
-extern NSString* const DBUserDidLoginNotification; // Posted when the User logs in
-extern NSString* const DBUserDidLogoutNotification; // Posted when the User logs out
+extern NSString* const UserDidLoginNotification; // Posted when the User logs in
+extern NSString* const UserDidLogoutNotification; // Posted when the User logs out
 
 /**
  * A protocol defining life-cycles events for a user logging in and out
