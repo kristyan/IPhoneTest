@@ -98,6 +98,8 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	[window setRootViewController:tabBarController];
 	
+	[tabBarController release];
+	
 	[self.window makeKeyAndVisible];
     
     return YES;

@@ -101,7 +101,6 @@
 	self.view.backgroundColor = [UIColor darkGrayColor];
 	RKObjectManager* manager = [RKObjectManager sharedManager];
 	User *currentUser = [User currentUser];
-	NSLog(@"User Id = %@", [currentUser userID]);
 	NSString *path = [NSString stringWithFormat:@"/users/%@/teams", [currentUser userID]];
     [manager loadObjectsAtResourcePath:path objectClass:[Membership class] delegate:self];
 }	
