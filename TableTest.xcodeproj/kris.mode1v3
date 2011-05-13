@@ -272,7 +272,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
+									<integer>25</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -315,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MembershipsTableViewController.m</string>
+								<string>Membership.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,39 +323,39 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MembershipsTableViewController.m</string>
+										<string>Membership.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>01C64CE4137D76A200246089</string>
+										<string>01C64D08137D9F2700246089</string>
 										<key>history</key>
 										<array>
 											<string>01BD57DE137005CE00965646</string>
 											<string>014C4BB313705E9B00FC4162</string>
 											<string>014C4C3F1371606B00FC4162</string>
 											<string>014C4CA01371709C00FC4162</string>
-											<string>014C4DF71379C72900FC4162</string>
-											<string>01C64C20137C535500246089</string>
-											<string>01C64C95137D647800246089</string>
-											<string>01C64C96137D647800246089</string>
-											<string>01C64C99137D647800246089</string>
-											<string>01C64C9A137D647800246089</string>
-											<string>01C64C9B137D647800246089</string>
-											<string>01C64CAC137D65E200246089</string>
-											<string>01C64CB9137D68CF00246089</string>
-											<string>01C64CBA137D68CF00246089</string>
-											<string>01C64CBB137D68CF00246089</string>
-											<string>01C64CCA137D6AF500246089</string>
-											<string>01C64CD8137D75C400246089</string>
-											<string>01C64CD9137D75C400246089</string>
 											<string>01C64CDA137D75C400246089</string>
-											<string>01C64CDB137D75C400246089</string>
-											<string>01C64CDC137D75C400246089</string>
-											<string>01C64CDD137D75C400246089</string>
-											<string>01C64CE1137D76A200246089</string>
-											<string>01C64CE2137D76A200246089</string>
-											<string>01C64CE3137D76A200246089</string>
-											<string>01C64CD7137D75C400246089</string>
+											<string>01C64CF3137D9F2700246089</string>
+											<string>01C64CF4137D9F2700246089</string>
+											<string>01C64CF5137D9F2700246089</string>
+											<string>01C64CF6137D9F2700246089</string>
+											<string>01C64CF7137D9F2700246089</string>
+											<string>01C64CF8137D9F2700246089</string>
+											<string>01C64CF9137D9F2700246089</string>
+											<string>01C64CFA137D9F2700246089</string>
+											<string>01C64CFB137D9F2700246089</string>
+											<string>01C64CFC137D9F2700246089</string>
+											<string>01C64CFD137D9F2700246089</string>
+											<string>01C64CFE137D9F2700246089</string>
+											<string>01C64CFF137D9F2700246089</string>
+											<string>01C64D00137D9F2700246089</string>
+											<string>01C64D01137D9F2700246089</string>
+											<string>01C64D02137D9F2700246089</string>
+											<string>01C64D03137D9F2700246089</string>
+											<string>01C64D04137D9F2700246089</string>
+											<string>01C64D05137D9F2700246089</string>
+											<string>01C64D06137D9F2700246089</string>
+											<string>01C64D07137D9F2700246089</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -795,12 +795,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>User.m</string>
+										<string>TableTestAppDelegate.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -821,8 +823,6 @@
 							<string>355pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

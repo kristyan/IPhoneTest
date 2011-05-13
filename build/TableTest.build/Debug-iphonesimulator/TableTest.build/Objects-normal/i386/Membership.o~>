@@ -1,0 +1,10 @@
+/Users/kris/code/TableTest/Classes/Membership.m: In function '-[Membership fullAvatarThumbURL]':
+/Users/kris/code/TableTest/Classes/Membership.m:73: error: 'TeamerBaseURL' undeclared (first use in this function)
+/Users/kris/code/TableTest/Classes/Membership.m:73: error: (Each undeclared identifier is reported only once
+/Users/kris/code/TableTest/Classes/Membership.m:73: error: for each function it appears in.)
+{standard input}:343:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:343:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:295:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"
+{standard input}:295:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_0
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0

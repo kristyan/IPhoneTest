@@ -34,7 +34,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
     
     // Override point for customization after application launch.
 	
-	RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:DBRestKitBaseURL]; 
+	RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:TeamerBaseURL]; 
 	
 	// Set nil for any attributes we expect to appear in the payload, but do not
 	objectManager.mapper.missingElementMappingPolicy = RKSetNilForMissingElementMappingPolicy;

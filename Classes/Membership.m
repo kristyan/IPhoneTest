@@ -70,7 +70,7 @@
 }
 
 - (NSString*)fullAvatarThumbURL {
-    return [NSString stringWithFormat:@"%@%@", DBRestKitBaseURL, avatarThumbURL];
+    return [NSString stringWithFormat:@"%@%@", TeamerBaseURL, avatarThumbURL];
 }
 
 - (void) dealloc {

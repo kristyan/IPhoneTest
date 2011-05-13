@@ -15,7 +15,7 @@
  * conditional compilation, you can very quickly switch between server environments
  * and produce builds targetted at different backend systems.
  */
-extern NSString* const DBRestKitBaseURL;
+extern NSString* const TeamerBaseURL;
 
 /**
  * Server Environments for conditional compilation

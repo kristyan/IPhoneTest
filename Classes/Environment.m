@@ -10,10 +10,10 @@
 
 // Base URL
 #if ENVIRONMENT == ENVIRONMENT_DEVELOPMENT
-NSString* const DBRestKitBaseURL = @"http://localhost:3000";
+NSString* const TeamerBaseURL = @"http://localhost:3000";
 #elif ENVIRONMENT == ENVIRONMENT_STAGING
-NSString* const DBRestKitBaseURL = @"http://app01.c45063.blueboxgrid.com";
+NSString* const TeamerBaseURL = @"http://app01.c45063.blueboxgrid.com";
 #elif ENVIRONMENT == ENVIRONMENT_PRODUCTION
-NSString* const DBRestKitBaseURL = @"http://teamer.net";
+NSString* const TeamerBaseURL = @"http://teamer.net";
 #endif
 
