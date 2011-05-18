@@ -11,6 +11,7 @@
 #import "User.h"
 #import "MemberItemCell.h"
 #import "TeamActivityTableViewController.h"
+#import "LoginViewController.h"
 
 
 /**
@@ -42,7 +43,6 @@
  - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {  
    [memberships removeAllObjects];
    for (Membership* member in objects) {
-      NSLog(@"Loaded member %@", [member teamID]); 
 	  [memberships addObject:member];
 	  [[self navigationItem] setTitle:[member fullName]];	
    }
@@ -85,7 +85,6 @@
 	     teamActivityTableViewController = [[TeamActivityTableViewController alloc]	init]; 
 	}
 	
-	
 	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:teamActivityTableViewController animated:YES];
 }
@@ -98,7 +97,6 @@
 
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
-	self.view.backgroundColor = [UIColor darkGrayColor];
 	RKObjectManager* manager = [RKObjectManager sharedManager];
 	User *currentUser = [User currentUser];
 	NSString *path = [NSString stringWithFormat:@"/users/%@/teams", [currentUser userID]];

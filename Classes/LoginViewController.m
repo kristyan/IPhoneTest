@@ -17,7 +17,8 @@
 
 -(IBAction) loginClicked: (id) sender {
 	// Log the user in
-	User* user = [User currentUser];		
+	User* user = [User currentUser];
+	user.delegate = self;
 	[user loginWithUsername:usernameField.text andPassword:passwordField.text delegate:self];
 }	
 
@@ -49,7 +50,6 @@
 #pragma mark UserAuthenticationDelegate methods
 
 - (void)userDidLogin:(User*)user {
-	NSLog(@"Callback to userDidLogin");
 	// dismiss the login screen
 	[self dismissModalViewControllerAnimated:YES];
 }
@@ -60,7 +60,6 @@
 }
 
 - (void)user:(User*)user didFailLoginWithConnectionError:(NSError*)error {
-	NSLog(@"didFailLoginWithConnectionError  %@", error);
 	[statusLabel setText:@"Connection Error"];
 }
 

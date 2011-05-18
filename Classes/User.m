@@ -21,10 +21,9 @@ static User* currentUser = nil;
 
 @implementation User
 
-@synthesize email;
-@synthesize username;
-@synthesize singleAccessToken;
-@synthesize userID;
+@dynamic email;
+@dynamic singleAccessToken;
+@dynamic userID;
 
 @synthesize delegate = _delegate;
 
@@ -53,15 +52,20 @@ static User* currentUser = nil;
  * are not sending messages to nil
  */
 + (User*)currentUser {
+	
 	if (nil == currentUser) {
-		/*id userID = [[NSUserDefaults standardUserDefaults] objectForKey:kDBUserCurrentUserIDDefaultsKey];
+		id userID = [[NSUserDefaults standardUserDefaults] objectForKey:UserCurrentUserIDDefaultsKey];
 		if (userID) {
 			currentUser = [self objectWithPrimaryKeyValue:userID];
+			
 		} else {
 			currentUser = [self object];
 		}
-		*/
-		currentUser = [[User alloc] init];
+		
+		if (!currentUser) {
+		    currentUser = [self object];
+		}
+		[currentUser retain];
     }
 	
 	return currentUser;
@@ -171,16 +175,22 @@ static User* currentUser = nil;
 }	
 
 - (BOOL)isLoggedIn {
-	return self.singleAccessToken != nil;
+    return self.singleAccessToken != nil;
 }
 
++ (NSEntityDescription*)entity {
+	
+	return [NSEntityDescription entityForName:@"User" inManagedObjectContext
+											 :[RKManagedObject managedObjectContext]];
+	
+} 
 
 - (void)dealloc {
 	_delegate = nil;
-	[email release];
-	[username release];
-	[userID release];
-	[singleAccessToken release];
+	//[email release];
+	//[username release];
+	//[userID release];
+	//[singleAccessToken release];
 	[super dealloc];
 }
 

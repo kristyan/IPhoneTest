@@ -45,9 +45,8 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	// with a SQLite database. We are also utilizing the managed object cache support to provide
 	// offline access to locally cached content.
 	objectManager.objectStore = [[[RKManagedObjectStore alloc] initWithStoreFilename:@"Teamer.sqlite"] autorelease];
-	//objectManager.objectStore.managedObjectCache = [[DBManagedObjectCache new] autorelease];
 	
-	//[objectManager registerClass:[User class] forElementNamed:@"user"];
+   [objectManager registerClass:[User class] forElementNamed:@"user"];
 	
 	// Set Up Router
 	// The router is responsible for generating the appropriate resource path to
@@ -77,6 +76,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	// Initialize authenticated access if we have a logged in current User reference
 	User* user = [User currentUser];
 	if ([user isLoggedIn]) {
+		NSLog(@"User Logged in from core data.");
 	    [objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:AccessTokenHTTPHeaderField];
 	}
 	

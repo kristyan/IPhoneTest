@@ -15,6 +15,7 @@
 		014C4D901379796B00FC4162 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014C4D8E1379796B00FC4162 /* LoginViewController.xib */; };
 		01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */; };
 		01C64A00137BE89900246089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C649FF137BE89900246089 /* User.m */; };
+		01C64D721383E49B00246089 /* DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 01C64D711383E49B00246089 /* DataModel.xcdatamodel */; };
 		01FB7EC31369D7F800EFF625 /* MembershipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */; };
 		01FB7ED01369DA7000EFF625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7ECF1369DA7000EFF625 /* BaseModel.m */; };
 		01FB7F2A1369DCEA00EFF625 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FB7F1B1369DCA800EFF625 /* libRestKitSupport.a */; };
@@ -131,6 +132,7 @@
 		01BD571C136A1D5D00965646 /* MemberItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberItemCell.m; sourceTree = "<group>"; };
 		01C649FE137BE89900246089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		01C649FF137BE89900246089 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		01C64D711383E49B00246089 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembershipsTableViewController.h; sourceTree = "<group>"; };
 		01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembershipsTableViewController.m; sourceTree = "<group>"; };
 		01FB7ECE1369DA7000EFF625 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				01C64D711383E49B00246089 /* DataModel.xcdatamodel */,
 				014C4C3213715BC500FC4162 /* icon.png */,
 				8D1107310486CEB800E47090 /* TableTest-Info.plist */,
 			);
@@ -434,6 +437,7 @@
 				014C4D8F1379796B00FC4162 /* LoginViewController.m in Sources */,
 				0128EBB31379DAD40061E865 /* BaseTableViewController.m in Sources */,
 				01C64A00137BE89900246089 /* User.m in Sources */,
+				01C64D721383E49B00246089 /* DataModel.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

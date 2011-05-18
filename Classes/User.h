@@ -15,7 +15,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
-@interface User : RKObject <RKObjectLoaderDelegate> {
+@interface User : RKManagedObject <RKObjectLoaderDelegate> {
 	NSObject<UserAuthenticationDelegate>* _delegate;
 }
 
@@ -29,10 +29,6 @@
  */
 @property (nonatomic, retain) NSString* email;
 
-/**
- * The username of the User
- */
-@property (nonatomic, retain) NSString* username;
 
 /**
  * An Access Token returned when a User is authenticated
