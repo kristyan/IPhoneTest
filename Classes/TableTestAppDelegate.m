@@ -46,7 +46,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	// offline access to locally cached content.
 	objectManager.objectStore = [[[RKManagedObjectStore alloc] initWithStoreFilename:@"Teamer.sqlite"] autorelease];
 	
-   [objectManager registerClass:[User class] forElementNamed:@"user"];
+    [objectManager registerClass:[User class] forElementNamed:@"user"];
 	
 	// Set Up Router
 	// The router is responsible for generating the appropriate resource path to
@@ -73,35 +73,44 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:UserDidLoginNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:UserDidLogoutNotification object:nil];
 	
-	// Initialize authenticated access if we have a logged in current User reference
-	User* user = [User currentUser];
-	if ([user isLoggedIn]) {
-		NSLog(@"User Logged in from core data.");
-	    [objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:AccessTokenHTTPHeaderField];
-	}
-	
 	
 	// configure controllers
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
-	membershipsViewController = [[MembershipsTableViewController alloc] init];
+	MembershipsTableViewController* membershipsViewController = [[MembershipsTableViewController alloc] init];
 	
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:membershipsViewController];
 	
 	MemberProfileTableViewController* memberProfileTableViewController = [[MemberProfileTableViewController alloc] init];
     
     NSArray *viewControllers = [NSArray arrayWithObjects:navController, memberProfileTableViewController, nil];
-	[navController release];
-	[memberProfileTableViewController release];
 	
 	[tabBarController setViewControllers:viewControllers];
 	
 	[window setRootViewController:tabBarController];
 	
-	[tabBarController release];
-	
 	[self.window makeKeyAndVisible];
     
+	// Initialize authenticated access if we have a logged in current User reference
+	User* user = [User currentUser];
+	if ([user isLoggedIn]) {
+		NSLog(@"User Logged in from core data.");
+	    [objectManager.client setValue:user.singleAccessToken forHTTPHeaderField:AccessTokenHTTPHeaderField];
+	} else {
+	    // The user is not logged in so display the login view as a modal view. Note the login controller
+		// must be presented by the controller currently in view, so we need to present it after
+		// makeKeyAndVisable is called.
+		LoginViewController *loginViewController = [[LoginViewController alloc] init];
+		[tabBarController presentModalViewController:loginViewController animated:NO];
+		[loginViewController release];
+	}	
+	
+	// release controllers as they are retained by the main window
+	[tabBarController release];
+	[navController release];
+	[memberProfileTableViewController release];
+	[membershipsViewController release];
+	
     return YES;
 }
 
@@ -165,8 +174,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 - (void)dealloc {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
     [window release];
-	[membershipsViewController release];
-    [super dealloc];
+	[super dealloc];
 }
 
 

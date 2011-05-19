@@ -7,6 +7,7 @@
 //
 #import "Membership.h"
 #import "Environment.h"
+
 @implementation Membership
 
 @synthesize memberID;

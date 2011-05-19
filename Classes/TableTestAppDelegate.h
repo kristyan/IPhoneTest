@@ -12,7 +12,6 @@
 
 @interface TableTestAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	MembershipsTableViewController* membershipsViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
