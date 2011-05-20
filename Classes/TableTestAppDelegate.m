@@ -95,7 +95,16 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	profileNavController.tabBarItem = profileItem;
 	[profileItem release];
 	
-	NSArray *viewControllers = [NSArray arrayWithObjects:teamsNavController, profileNavController, nil];
+	UINavigationController *dashboardNavController = [[UINavigationController alloc] init];
+	
+	UITabBarItem* dashboardItem = [[UITabBarItem alloc] initWithTitle:@"Dashboard" image:nil tag:2];
+	dashboardNavController.tabBarItem = dashboardItem;
+	[dashboardItem release];
+	
+	NSArray *viewControllers = [NSArray arrayWithObjects:teamsNavController, 
+								dashboardNavController,
+								profileNavController, 
+								 nil];
 	
 	[tabBarController setViewControllers:viewControllers];
 	
@@ -123,6 +132,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	[membershipsViewController release];
 	[profileNavController release];
 	[memberProfileTableViewController release];
+	[dashboardNavController release];
 	
 	
     return YES;

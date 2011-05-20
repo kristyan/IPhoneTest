@@ -16,6 +16,8 @@
 		01BD571D136A1D5D00965646 /* MemberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */; };
 		01C64A00137BE89900246089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C649FF137BE89900246089 /* User.m */; };
 		01C64D721383E49B00246089 /* DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 01C64D711383E49B00246089 /* DataModel.xcdatamodel */; };
+		01C6507E1386A67200246089 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6507D1386A67200246089 /* Member.m */; };
+		01C650831386A96000246089 /* TeamMembersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C650821386A96000246089 /* TeamMembersTableViewController.m */; };
 		01FB7EC31369D7F800EFF625 /* MembershipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */; };
 		01FB7ED01369DA7000EFF625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FB7ECF1369DA7000EFF625 /* BaseModel.m */; };
 		01FB7F2A1369DCEA00EFF625 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FB7F1B1369DCA800EFF625 /* libRestKitSupport.a */; };
@@ -133,6 +135,10 @@
 		01C649FE137BE89900246089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		01C649FF137BE89900246089 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		01C64D711383E49B00246089 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		01C6507C1386A67200246089 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		01C6507D1386A67200246089 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		01C650811386A96000246089 /* TeamMembersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamMembersTableViewController.h; sourceTree = "<group>"; };
+		01C650821386A96000246089 /* TeamMembersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamMembersTableViewController.m; sourceTree = "<group>"; };
 		01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembershipsTableViewController.h; sourceTree = "<group>"; };
 		01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembershipsTableViewController.m; sourceTree = "<group>"; };
 		01FB7ECE1369DA7000EFF625 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -204,12 +210,16 @@
 				01FB7ECE1369DA7000EFF625 /* BaseModel.h */,
 				01FB7F4E1369E1A800EFF625 /* Membership.h */,
 				01BD571B136A1D5D00965646 /* MemberItemCell.h */,
+				01C6507C1386A67200246089 /* Member.h */,
+				01C6507D1386A67200246089 /* Member.m */,
 				01BD571C136A1D5D00965646 /* MemberItemCell.m */,
 				01FB7F4F1369E1A800EFF625 /* Membership.m */,
 				01FB7F661369E32100EFF625 /* Environment.h */,
 				01C649FE137BE89900246089 /* User.h */,
 				01C649FF137BE89900246089 /* User.m */,
 				014C4D8C1379796B00FC4162 /* LoginViewController.h */,
+				01C650811386A96000246089 /* TeamMembersTableViewController.h */,
+				01C650821386A96000246089 /* TeamMembersTableViewController.m */,
 				014C4D8D1379796B00FC4162 /* LoginViewController.m */,
 				014C4D8E1379796B00FC4162 /* LoginViewController.xib */,
 				01FB7F671369E32100EFF625 /* Environment.m */,
@@ -438,6 +448,8 @@
 				0128EBB31379DAD40061E865 /* BaseTableViewController.m in Sources */,
 				01C64A00137BE89900246089 /* User.m in Sources */,
 				01C64D721383E49B00246089 /* DataModel.xcdatamodel in Sources */,
+				01C6507E1386A67200246089 /* Member.m in Sources */,
+				01C650831386A96000246089 /* TeamMembersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

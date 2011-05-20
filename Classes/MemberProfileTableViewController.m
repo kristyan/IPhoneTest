@@ -132,10 +132,11 @@
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Section1Cell] autorelease];
 		}
 		
+		// these cells have accessory types
 		if ([label isEqualToString:@"Teams"] || [label isEqualToString:@"Siblings"]) {
 		    cell.textLabel.text = label;
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }
+        } // normal cell
 		else {
 		    cell.textLabel.text = label;
 			cell.detailTextLabel.text = [memberData objectForKey:label];

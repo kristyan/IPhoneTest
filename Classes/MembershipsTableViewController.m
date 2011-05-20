@@ -10,7 +10,7 @@
 #import "Membership.h"
 #import "User.h"
 #import "MemberItemCell.h"
-#import "TeamActivityTableViewController.h"
+#import "TeamMembersTableViewController.h"
 #import "LoginViewController.h"
 
 
@@ -28,7 +28,11 @@
 	
 	// set up the navigation items when this controller is on top of the navigation stack
 	[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+	UIBarButtonItem *newButton = [[UIBarButtonItem alloc] 
+								  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
 	
+	[[self navigationItem] setRightBarButtonItem:newButton];
+	[newButton release];
 	
 	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Teams" style:UIBarButtonItemStylePlain target:nil action:nil];
 	self.navigationItem.backBarButtonItem = backButton;
@@ -81,15 +85,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-    if (!teamActivityTableViewController) {
-	     teamActivityTableViewController = [[TeamActivityTableViewController alloc]	init]; 
+    if (!teamMembersTableViewController) {
+	     teamMembersTableViewController = [[TeamMembersTableViewController alloc]	init]; 
 	}
 	Membership *member = [memberships objectAtIndex:[indexPath row]];
 	
-	teamActivityTableViewController.teamID = [member teamID];	
+	teamMembersTableViewController.teamID = [member teamID];	
 
 	// Pass the selected object to the new view controller.
-	[self.navigationController pushViewController:teamActivityTableViewController animated:YES];
+	[self.navigationController pushViewController:teamMembersTableViewController animated:YES];
 }
 
 
@@ -122,7 +126,7 @@
 
 - (void)dealloc {
 	[memberships release];
-	[teamActivityTableViewController release];
+	[teamMembersTableViewController release];
     [super dealloc];
 }
 
