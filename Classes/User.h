@@ -29,6 +29,10 @@
  */
 @property (nonatomic, retain) NSString* email;
 
+/**
+ * The e-mail address of the User
+ */
+@property (nonatomic, retain) NSString* phone;
 
 /**
  * An Access Token returned when a User is authenticated
@@ -39,6 +43,36 @@
  * The numeric primary key of this User in the remote backend system
  */
 @property (nonatomic, retain) NSNumber* userID;
+
+/**
+ * The first name of the User
+ */
+@property (nonatomic, retain) NSString* firstName;
+
+/**
+ * The last name of the User
+ */
+@property (nonatomic, retain) NSString* lastName;
+
+/**
+ * The users city
+ */
+@property (nonatomic, retain) NSString* city;
+
+/**
+ * The the users country code
+ */
+@property (nonatomic, retain) NSString* countryCode;
+
+/**
+ * The the users gender
+ */
+@property (nonatomic, retain) NSString* gender;
+
+/**
+ * The dat this user was created
+ */
+@property (nonatomic, retain) NSString* createdAt;
 
 
 

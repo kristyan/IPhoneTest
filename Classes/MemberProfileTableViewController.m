@@ -7,6 +7,7 @@
 //
 
 #import "MemberProfileTableViewController.h"
+#import "User.h"
 
 
 @implementation MemberProfileTableViewController
@@ -14,6 +15,16 @@
 
 #pragma mark -
 #pragma mark Initialization
+
+- (id) init {
+	[super initWithStyle:UITableViewStyleGrouped]; //Grouped or plain style for table
+	[[self navigationItem] setRightBarButtonItem:[self editButtonItem]];
+	memberData = [[NSMutableDictionary alloc] init];
+	memberDataLabels = [[NSMutableArray alloc] init];
+	fullName = [[NSString alloc] init];
+	
+	return self;
+}
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -42,7 +53,31 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-}
+	
+	// setup data
+    User* user = [User currentUser];
+	[memberDataLabels addObject:@"Email"]; 
+	[memberData setObject:[user email] forKey:@"Email"];
+	[memberDataLabels addObject:@"Phone"]; 
+	[memberData setObject:[user phone] forKey:@"Phone"];
+    [memberDataLabels addObject:@"Location"]; 
+	[memberData setObject:[user city] forKey:@"Location"];
+	NSString* gender = [user gender];
+	if (!gender) {
+		gender = @"Unknown";
+	}
+	[memberDataLabels addObject:@"Gender"]; 
+	[memberData setObject:gender forKey:@"Gender"];
+	
+	[memberDataLabels addObject:@"Teams"];
+	[memberDataLabels addObject:@"Siblings"];
+	
+	fullName = [NSString stringWithFormat:@"%@%@%@", [user firstName], @" ", [user lastName]];
+	NSString *navTitle = fullName;
+	
+	[[self navigationItem] setTitle:navTitle];
+	
+ }
 
 /*
 - (void)viewDidAppear:(BOOL)animated {
@@ -67,23 +102,55 @@
 }
 */
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 2;
+}
 
 
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+		return 1;
+	}
+	else {
+	    return [memberDataLabels count];
+    }
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+	static NSString *Section1Cell = @"Section1Cell";
+    static NSString *Section2Cell = @"Section2Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+    UITableViewCell *cell = nil;    
     
-    // Configure the cell...
-    
-    return cell;
+	if (indexPath.section == 1) {
+		
+		NSString* label = [memberDataLabels objectAtIndex:[indexPath row]];
+		cell = [tableView dequeueReusableCellWithIdentifier:Section1Cell];
+		if (cell == nil) {
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Section1Cell] autorelease];
+		}
+		
+		if ([label isEqualToString:@"Teams"] || [label isEqualToString:@"Siblings"]) {
+		    cell.textLabel.text = label;
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
+		else {
+		    cell.textLabel.text = label;
+			cell.detailTextLabel.text = [memberData objectForKey:label];
+		}	
+	}
+	else {
+		cell = [tableView dequeueReusableCellWithIdentifier:Section2Cell];
+		if (cell == nil) {
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Section2Cell] autorelease];
+		}
+		
+	    cell.textLabel.text = fullName;
+		cell.image = [UIImage imageNamed:@"icon.png"];
+	}	
+	return cell;
 }
 
 
@@ -131,14 +198,11 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-    */
+	NSString* label = [memberDataLabels objectAtIndex:[indexPath row]];
+	if ([label isEqualToString:@"Teams"]) {
+		// select the teams tab
+	    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:0];
+	}
 }
 
 

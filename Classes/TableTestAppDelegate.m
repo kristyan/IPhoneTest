@@ -34,6 +34,8 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
     
     // Override point for customization after application launch.
 	
+	// Configure RestKit
+	
 	RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:TeamerBaseURL]; 
 	
 	// Set nil for any attributes we expect to appear in the payload, but do not
@@ -74,16 +76,26 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAccessTokenHeaderFromAuthenticationNotification:) name:UserDidLogoutNotification object:nil];
 	
 	
-	// configure controllers
+	// Configure Controllers
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
 	MembershipsTableViewController* membershipsViewController = [[MembershipsTableViewController alloc] init];
 	
-	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:membershipsViewController];
+	UINavigationController *teamsNavController = [[UINavigationController alloc] initWithRootViewController:membershipsViewController];
+	
+	UITabBarItem* teamsItem = [[UITabBarItem alloc] initWithTitle:@"Teams" image:nil tag:0];
+	teamsNavController.tabBarItem = teamsItem;
+	[teamsItem release];
 	
 	MemberProfileTableViewController* memberProfileTableViewController = [[MemberProfileTableViewController alloc] init];
     
-    NSArray *viewControllers = [NSArray arrayWithObjects:navController, memberProfileTableViewController, nil];
+	UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:memberProfileTableViewController];
+    
+	UITabBarItem* profileItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:nil tag:1];
+	profileNavController.tabBarItem = profileItem;
+	[profileItem release];
+	
+	NSArray *viewControllers = [NSArray arrayWithObjects:teamsNavController, profileNavController, nil];
 	
 	[tabBarController setViewControllers:viewControllers];
 	
@@ -107,9 +119,11 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	
 	// release controllers as they are retained by the main window
 	[tabBarController release];
-	[navController release];
-	[memberProfileTableViewController release];
+	[teamsNavController release];
 	[membershipsViewController release];
+	[profileNavController release];
+	[memberProfileTableViewController release];
+	
 	
     return YES;
 }

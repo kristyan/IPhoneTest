@@ -84,7 +84,10 @@
     if (!teamActivityTableViewController) {
 	     teamActivityTableViewController = [[TeamActivityTableViewController alloc]	init]; 
 	}
+	Membership *member = [memberships objectAtIndex:[indexPath row]];
 	
+	teamActivityTableViewController.teamID = [member teamID];	
+
 	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:teamActivityTableViewController animated:YES];
 }

@@ -12,6 +12,7 @@
 
 @implementation TeamActivityTableViewController
 
+@synthesize teamID;
 
 #pragma mark -
 #pragma mark Initialization
@@ -168,6 +169,7 @@
 
 
 - (void)dealloc {
+	[teamID release];
     [super dealloc];
 }
 

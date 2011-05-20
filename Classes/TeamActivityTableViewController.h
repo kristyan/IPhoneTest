@@ -10,7 +10,9 @@
 #import "BaseTableViewController.h"
 
 @interface TeamActivityTableViewController : BaseTableViewController {
-
+    NSNumber* teamID;
 }
+
+@property (nonatomic, retain) NSNumber* teamID;
 
 @end

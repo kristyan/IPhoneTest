@@ -10,7 +10,9 @@
 #import "BaseTableViewController.h"
 
 @interface MemberProfileTableViewController : BaseTableViewController {
-
+    NSMutableDictionary* memberData;
+	NSMutableArray* memberDataLabels;
+	NSString* fullName;
 }
 
 @end

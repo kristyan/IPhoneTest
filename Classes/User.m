@@ -22,8 +22,15 @@ static User* currentUser = nil;
 @implementation User
 
 @dynamic email;
+@dynamic phone;
 @dynamic singleAccessToken;
 @dynamic userID;
+@dynamic firstName;
+@dynamic lastName;
+@dynamic city;
+@dynamic countryCode;
+@dynamic gender;
+@dynamic createdAt;
 
 @synthesize delegate = _delegate;
 
@@ -35,7 +42,14 @@ static User* currentUser = nil;
     return [NSDictionary dictionaryWithKeysAndObjects:
 			@"id", @"userID",
 			@"email", @"email",
+			@"phone", @"phone",
 			@"single_access_token", @"singleAccessToken",
+			@"first_name", @"firstName",
+			@"last_name", @"lastName",
+			@"city", @"city",
+			@"country_code", @"countryCode",
+			@"gender", @"gender",
+			@"created_at", @"createdAt",
 			nil];
 }
 
