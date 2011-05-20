@@ -32,6 +32,7 @@
 	[members removeAllObjects];
 	for (Member* member in objects) {
 		[members addObject:member];
+		// set the navigation title
 		[[self navigationItem] setTitle:[member teamName]];	
 	}
 	
@@ -102,6 +103,12 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)loadView
+
+{
+	[super loadView];
+    [self buildTitleHeaderView:@"Team Members"];		
+}
 
 - (void)dealloc {
 	[members release];

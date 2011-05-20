@@ -14,7 +14,9 @@
 
 @interface MembershipsTableViewController : BaseTableViewController <RKObjectLoaderDelegate> {
     NSMutableArray* memberships;
+	NSString* headerTitle;
 	TeamMembersTableViewController *teamMembersTableViewController;
 }
+@property (nonatomic, retain) NSString* headerTitle;
 
 @end

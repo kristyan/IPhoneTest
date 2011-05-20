@@ -75,6 +75,7 @@
 	fullName = [NSString stringWithFormat:@"%@%@%@", [user firstName], @" ", [user lastName]];
 	NSString *navTitle = fullName;
 	
+	// set the navigation title
 	[[self navigationItem] setTitle:navTitle];
 	
  }

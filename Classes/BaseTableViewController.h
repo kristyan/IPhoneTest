@@ -13,4 +13,10 @@
 
 }
 
+/**
+ * Utility for building a header view with a title
+ * Subclasses that need a header view containing a title can call this.
+ */
+- (UIView*)buildTitleHeaderView:(NSString*)title;
+
 @end

@@ -21,10 +21,13 @@
  */
 @implementation MembershipsTableViewController
 
+@synthesize headerTitle;
+
 - (id) init {
 	[super initWithStyle:UITableViewStyleGrouped]; //Grouped or plain style for table
 	
 	memberships =[[NSMutableArray alloc] init];
+	
 	
 	// set up the navigation items when this controller is on top of the navigation stack
 	[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
@@ -48,11 +51,14 @@
    [memberships removeAllObjects];
    for (Membership* member in objects) {
 	  [memberships addObject:member];
-	  [[self navigationItem] setTitle:[member fullName]];	
+	  [[self navigationItem] setTitle:[member fullName]];
+	  self.headerTitle = [member fullName]; 
    }
 
    // make sure the view has the data 	 
    [[self tableView] reloadData];
+   // must be called here to ensure the headerView is reloaded      
+   [self buildTitleHeaderView:headerTitle];
 }  
    
  - (void)objectLoader:(RKObjectLoader*)objectLoader didFailWithError:(NSError*)error {  
@@ -86,7 +92,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
     if (!teamMembersTableViewController) {
-	     teamMembersTableViewController = [[TeamMembersTableViewController alloc]	init]; 
+	     teamMembersTableViewController = [[TeamMembersTableViewController alloc] init]; 
 	}
 	Membership *member = [memberships objectAtIndex:[indexPath row]];
 	
@@ -101,6 +107,13 @@
 {
     return 80; 
 }
+
+- (void)loadView
+
+{
+	[super loadView];
+}
+
 
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];

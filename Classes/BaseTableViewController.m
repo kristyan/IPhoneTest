@@ -15,20 +15,9 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-*/
-
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.view.backgroundColor = [UIColor darkGrayColor];
-	
+    	
 	// check if the current user is logged in here
 	BOOL isLoggedIn = [[User currentUser] isLoggedIn];
 	if (!isLoggedIn) {
@@ -38,6 +27,11 @@
 		[loginViewController release];
 		
 	}
+}
+
+- (void)loadView {
+	[super loadView];
+	self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
 /*
@@ -79,6 +73,25 @@
     // For example: self.myOutlet = nil;
 }
 
+- (UIView*) buildTitleHeaderView:(NSString*)title {
+	UIView *containerView =
+	[[[UIView alloc]
+	  initWithFrame:CGRectMake(0, 0, 300, 60)]
+	 autorelease];
+	UILabel *headerLabel =
+	[[[UILabel alloc]
+	  initWithFrame:CGRectMake(10, 20, 300, 40)]
+	 autorelease];
+	headerLabel.text = title;
+	headerLabel.textColor = [UIColor whiteColor];
+	headerLabel.shadowColor = [UIColor blackColor];
+	headerLabel.shadowOffset = CGSizeMake(0, 1);
+	headerLabel.font = [UIFont boldSystemFontOfSize:22];
+	headerLabel.backgroundColor = [UIColor clearColor];
+	[containerView addSubview:headerLabel];
+	self.tableView.tableHeaderView = containerView;
+    return containerView;
+}	
 
 - (void)dealloc {
     [super dealloc];

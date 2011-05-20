@@ -66,6 +66,7 @@
 }
 
 - (void) setMembership:(Membership *) membership {
+	
     [organiserNameLabel setText:[membership organiserName]];
 	[teamNameLabel setText:[membership teamName]];
 	NSString *teamSportLocation = [NSString stringWithFormat:@"%@%@%@", [membership teamSport], @" - ", [membership teamLocation]];
