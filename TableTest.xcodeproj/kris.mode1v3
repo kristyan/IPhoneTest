@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>01C651F813870A4800246089</string>
+						<string>01C6521013870F6200246089</string>
 						<key>history</key>
 						<array>
 							<string>01C64FC013866D5900246089</string>
@@ -314,13 +314,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>24</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 50}, {295, 578}}</string>
+							<string>{{0, 63}, {295, 578}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -357,7 +356,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BaseTableViewController.h</string>
+								<string>MembershipsTableViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -365,11 +364,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BaseTableViewController.h</string>
+										<string>MembershipsTableViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>01C651F713870A4800246089</string>
+										<string>01C6520F13870F6200246089</string>
 										<key>history</key>
 										<array>
 											<string>01BD57DE137005CE00965646</string>
@@ -382,27 +381,27 @@
 											<string>01C651181386EA4300246089</string>
 											<string>01C6511A1386EA4300246089</string>
 											<string>01C6511D1386EA4300246089</string>
-											<string>01C6511F1386EA4300246089</string>
 											<string>01C651201386EA4300246089</string>
-											<string>01C651221386EA4300246089</string>
 											<string>01C651231386EA4300246089</string>
 											<string>01C651261386EA4300246089</string>
 											<string>01C651291386EA4300246089</string>
 											<string>01C651A31386FB8500246089</string>
-											<string>01C651D31387088E00246089</string>
 											<string>01C651D41387088E00246089</string>
-											<string>01C651D51387088E00246089</string>
 											<string>01C651D61387088E00246089</string>
 											<string>01C651D71387088E00246089</string>
 											<string>01C651D81387088E00246089</string>
-											<string>01C651DB1387088E00246089</string>
-											<string>01C651EC13870A0400246089</string>
-											<string>01C651ED13870A0400246089</string>
 											<string>01C651EE13870A0400246089</string>
 											<string>01C651EF13870A0400246089</string>
-											<string>01C651F013870A0400246089</string>
 											<string>01C651F113870A0400246089</string>
-											<string>01C651F213870A0400246089</string>
+											<string>01C6520113870EF600246089</string>
+											<string>01C6520213870EF600246089</string>
+											<string>01C6520313870EF600246089</string>
+											<string>01C6520413870EF600246089</string>
+											<string>01C6520513870EF600246089</string>
+											<string>01C6520613870EF600246089</string>
+											<string>01C6520C13870F6200246089</string>
+											<string>01C6520D13870F6200246089</string>
+											<string>01C6520E13870F6200246089</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -844,12 +843,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TeamActivityTableViewController.h</string>
+										<string>MemberItemCell.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -870,8 +871,6 @@
 							<string>356pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

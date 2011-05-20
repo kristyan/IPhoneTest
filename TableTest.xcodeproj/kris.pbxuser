@@ -2,16 +2,16 @@
 {
 	0128EBB11379DAD40061E865 /* BaseTableViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {784, 299}}";
-			sepNavSelRange = "{371, 0}";
-			sepNavVisRange = "{3, 429}";
+			sepNavIntBoundsRect = "{{0, 0}, {1056, 325}}";
+			sepNavSelRange = "{425, 0}";
+			sepNavVisRange = "{0, 270}";
 		};
 	};
 	0128EBB21379DAD40061E865 /* BaseTableViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {784, 1469}}";
-			sepNavSelRange = "{1728, 0}";
-			sepNavVisRange = "{1098, 660}";
+			sepNavIntBoundsRect = "{{0, 0}, {784, 1339}}";
+			sepNavSelRange = "{766, 0}";
+			sepNavVisRange = "{1800, 699}";
 		};
 	};
 	0128EBC01379DBFE0061E865 /* PBXTextBookmark */ = {
@@ -209,7 +209,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 92";
 		rLen = 0;
-		rLoc = 3384;
+		rLoc = 3467;
 		rType = 0;
 		vrLen = 726;
 		vrLoc = 2278;
@@ -297,9 +297,9 @@
 	};
 	014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 2977}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 3159}}";
 			sepNavSelRange = "{2050, 0}";
-			sepNavVisRange = "{0, 539}";
+			sepNavVisRange = "{539, 475}";
 			sepNavWindowFrame = "{{15, 55}, {1212, 723}}";
 		};
 	};
@@ -339,7 +339,7 @@
 	01BD571C136A1D5D00965646 /* MemberItemCell.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {929, 1027}}";
-			sepNavSelRange = "{2156, 0}";
+			sepNavSelRange = "{2262, 128}";
 			sepNavVisRange = "{1784, 766}";
 			sepNavWindowFrame = "{{35, 64}, {1212, 714}}";
 		};
@@ -438,7 +438,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 92";
 		rLen = 0;
-		rLoc = 3384;
+		rLoc = 3467;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 2280;
@@ -598,7 +598,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 92";
 		rLen = 0;
-		rLoc = 3384;
+		rLoc = 3467;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 499;
@@ -1651,7 +1651,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 92";
 		rLen = 0;
-		rLoc = 3384;
+		rLoc = 3467;
 		rType = 0;
 		vrLen = 648;
 		vrLoc = 0;
@@ -2912,7 +2912,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3796;
+		rLoc = 3879;
 		rType = 0;
 		vrLen = 730;
 		vrLoc = 2827;
@@ -2922,7 +2922,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3775;
+		rLoc = 3858;
 		rType = 0;
 		vrLen = 730;
 		vrLoc = 2827;
@@ -2942,7 +2942,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3775;
+		rLoc = 3858;
 		rType = 0;
 		vrLen = 729;
 		vrLoc = 2830;
@@ -2952,7 +2952,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3721;
+		rLoc = 3804;
 		rType = 0;
 		vrLen = 776;
 		vrLoc = 2831;
@@ -2992,7 +2992,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3721;
+		rLoc = 3804;
 		rType = 0;
 		vrLen = 776;
 		vrLoc = 2831;
@@ -3002,7 +3002,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3721;
+		rLoc = 3804;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 2831;
@@ -3012,7 +3012,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 105";
 		rLen = 0;
-		rLoc = 3782;
+		rLoc = 3865;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 2944;
@@ -3142,7 +3142,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3721;
+		rLoc = 3804;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 320;
@@ -3289,7 +3289,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 130";
 		rLen = 0;
-		rLoc = 4351;
+		rLoc = 4434;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 0;
@@ -4691,7 +4691,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 130";
 		rLen = 0;
-		rLoc = 4351;
+		rLoc = 4434;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -4701,7 +4701,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3232;
+		rLoc = 3315;
 		rType = 0;
 		vrLen = 684;
 		vrLoc = 2297;
@@ -4711,7 +4711,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3232;
+		rLoc = 3315;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 2297;
@@ -4880,7 +4880,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 106";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 678;
 		vrLoc = 3011;
@@ -5115,7 +5115,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3232;
+		rLoc = 3315;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 2315;
@@ -5493,7 +5493,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 103";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 2995;
@@ -5688,7 +5688,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 103";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 2898;
@@ -5698,7 +5698,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 105";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 3014;
@@ -5873,7 +5873,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 113";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 3088;
@@ -6283,7 +6283,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 110";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 2743;
@@ -6858,7 +6858,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 104";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 480;
 		vrLoc = 2880;
@@ -6878,7 +6878,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 101";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 2711;
@@ -6945,7 +6945,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 100";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 2711;
@@ -7140,7 +7140,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 100";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 562;
 		vrLoc = 2922;
@@ -8346,7 +8346,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 100";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 587;
 		vrLoc = 2922;
@@ -9680,7 +9680,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 100";
 		rLen = 0;
-		rLoc = 3619;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 0;
@@ -9965,7 +9965,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 103";
 		rLen = 25;
-		rLoc = 3810;
+		rLoc = 3893;
 		rType = 0;
 		vrLen = 594;
 		vrLoc = 548;
@@ -10230,7 +10230,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 17";
 		rLen = 0;
-		rLoc = 448;
+		rLoc = 424;
 		rType = 0;
 		vrLen = 502;
 		vrLoc = 54;
@@ -10240,7 +10240,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 103";
 		rLen = 0;
-		rLoc = 3787;
+		rLoc = 3870;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 2858;
@@ -10455,7 +10455,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 103";
 		rLen = 0;
-		rLoc = 3787;
+		rLoc = 3870;
 		rType = 0;
 		vrLen = 631;
 		vrLoc = 2273;
@@ -10465,7 +10465,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 17";
 		rLen = 0;
-		rLoc = 448;
+		rLoc = 424;
 		rType = 0;
 		vrLen = 492;
 		vrLoc = 3;
@@ -10640,7 +10640,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 17";
 		rLen = 0;
-		rLoc = 448;
+		rLoc = 424;
 		rType = 0;
 		vrLen = 492;
 		vrLoc = 3;
@@ -10650,7 +10650,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 2343;
@@ -10825,7 +10825,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2310;
@@ -11030,7 +11030,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 764;
 		vrLoc = 2310;
@@ -11224,7 +11224,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3120;
+		rLoc = 3203;
 		rType = 0;
 		vrLen = 595;
 		vrLoc = 2438;
@@ -11253,7 +11253,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 2295;
@@ -11428,7 +11428,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 2310;
@@ -11673,7 +11673,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3120;
+		rLoc = 3203;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 2560;
@@ -11898,7 +11898,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3121;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 2310;
@@ -11908,7 +11908,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 89";
 		rLen = 0;
-		rLoc = 3123;
+		rLoc = 3206;
 		rType = 0;
 		vrLen = 757;
 		vrLoc = 2295;
@@ -12123,7 +12123,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 71";
 		rLen = 44;
-		rLoc = 2563;
+		rLoc = 2646;
 		rType = 0;
 		vrLen = 642;
 		vrLoc = 1668;
@@ -12325,7 +12325,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 88";
 		rLen = 0;
-		rLoc = 3120;
+		rLoc = 3203;
 		rType = 0;
 		vrLen = 577;
 		vrLoc = 2516;
@@ -12557,7 +12557,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 73";
 		rLen = 0;
-		rLoc = 2676;
+		rLoc = 2759;
 		rType = 0;
 		vrLen = 595;
 		vrLoc = 1715;
@@ -12760,7 +12760,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 62";
 		rLen = 124;
-		rLoc = 2147;
+		rLoc = 2230;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 1739;
@@ -12982,7 +12982,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 30";
 		rLen = 67;
-		rLoc = 861;
+		rLoc = 835;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 599;
@@ -13551,7 +13551,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 47";
 		rLen = 51;
-		rLoc = 1636;
+		rLoc = 1647;
 		rType = 0;
 		vrLen = 616;
 		vrLoc = 904;
@@ -16212,7 +16212,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 47";
 		rLen = 51;
-		rLoc = 1636;
+		rLoc = 1647;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 2294;
@@ -20339,7 +20339,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 47";
 		rLen = 51;
-		rLoc = 1636;
+		rLoc = 1647;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 502;
@@ -20533,7 +20533,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {784, 351}}";
 			sepNavSelRange = "{231, 50}";
-			sepNavVisRange = "{81, 484}";
+			sepNavVisRange = "{30, 535}";
 		};
 	};
 	01C6507D1386A67200246089 /* Member.m */ = {
@@ -20611,7 +20611,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 85";
 		rLen = 11;
-		rLoc = 3004;
+		rLoc = 3087;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 2204;
@@ -21791,7 +21791,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 33";
 		rLen = 134;
-		rLoc = 1157;
+		rLoc = 1131;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 599;
@@ -22171,7 +22171,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 33";
 		rLen = 134;
-		rLoc = 1157;
+		rLoc = 1131;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 599;
@@ -22181,7 +22181,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 35";
 		rLen = 0;
-		rLoc = 1133;
+		rLoc = 1107;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 613;
@@ -22356,7 +22356,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 32";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 960;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 598;
@@ -22551,7 +22551,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 3663;
@@ -23281,7 +23281,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 3629;
@@ -23291,7 +23291,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 2513;
@@ -23466,7 +23466,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 2513;
@@ -23906,7 +23906,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 2499;
@@ -25196,7 +25196,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 128";
 		rLen = 0;
-		rLoc = 4239;
+		rLoc = 4322;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 2499;
@@ -25206,7 +25206,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 129";
 		rLen = 0;
-		rLoc = 3494;
+		rLoc = 3577;
 		rType = 0;
 		vrLen = 703;
 		vrLoc = 3486;
@@ -25381,7 +25381,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 110";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 3288;
@@ -25460,7 +25460,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 109";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 624;
 		vrLoc = 3057;
@@ -25655,7 +25655,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 109";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 3057;
@@ -27330,7 +27330,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 109";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 3057;
@@ -27340,7 +27340,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 124";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 3711;
@@ -27515,7 +27515,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 17";
 		rLen = 0;
-		rLoc = 442;
+		rLoc = 420;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 0;
@@ -27526,7 +27526,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 29;
+		rLoc = 27;
 		rType = 1;
 	};
 	01C6519D1386FA5700246089 /* PBXTextBookmark */ = {
@@ -27534,7 +27534,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 28";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 743;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 501;
@@ -27719,7 +27719,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 20";
 		rLen = 0;
-		rLoc = 561;
+		rLoc = 486;
 		rType = 0;
 		vrLen = 566;
 		vrLoc = 3;
@@ -27739,7 +27739,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 28";
 		rLen = 0;
-		rLoc = 770;
+		rLoc = 744;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 161;
@@ -27749,7 +27749,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 121";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 654;
 		vrLoc = 3359;
@@ -27924,7 +27924,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 30";
 		rLen = 0;
-		rLoc = 770;
+		rLoc = 744;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 551;
@@ -28099,7 +28099,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 121";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 3378;
@@ -28274,7 +28274,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 121";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 3403;
@@ -28449,7 +28449,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 130";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 3508;
@@ -28624,7 +28624,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 129";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 686;
 		vrLoc = 3356;
@@ -28799,7 +28799,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 130";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 711;
 		vrLoc = 3403;
@@ -28974,7 +28974,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 61";
 		rLen = 0;
-		rLoc = 1924;
+		rLoc = 2007;
 		rType = 0;
 		vrLen = 644;
 		vrLoc = 1372;
@@ -29149,7 +29149,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 109";
 		rLen = 1;
-		rLoc = 3468;
+		rLoc = 3551;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 1688;
@@ -29324,7 +29324,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 77";
 		rLen = 0;
-		rLoc = 1924;
+		rLoc = 2007;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 1901;
@@ -29509,7 +29509,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 115";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3574;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 598;
@@ -29638,7 +29638,7 @@
 		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
 		name = "MembershipsTableViewController.h: 21";
 		rLen = 0;
-		rLoc = 563;
+		rLoc = 487;
 		rType = 0;
 		vrLen = 569;
 		vrLoc = 0;
@@ -29648,7 +29648,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 60";
 		rLen = 0;
-		rLoc = 1874;
+		rLoc = 1957;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 1688;
@@ -29901,7 +29901,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 61";
 		rLen = 0;
-		rLoc = 1883;
+		rLoc = 1966;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 1392;
@@ -30096,7 +30096,7 @@
 		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
 		name = "MembershipsTableViewController.m: 61";
 		rLen = 40;
-		rLoc = 1883;
+		rLoc = 1966;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 1598;
@@ -30511,6 +30511,493 @@
 			);
 		};
 	};
+	01C651F913870E2100246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0128EBB11379DAD40061E865 /* BaseTableViewController.h */;
+		name = "BaseTableViewController.h: 20";
+		rLen = 0;
+		rLoc = 425;
+		rType = 0;
+		vrLen = 270;
+		vrLoc = 0;
+	};
+	01C651FA13870E2100246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 014C4D0A13794D1D00FC4162 /* TeamActivityTableViewController.h */;
+		name = "TeamActivityTableViewController.h: 12";
+		rLen = 12;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	01C651FB13870E2100246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */;
+		rLen = 10;
+		rLoc = 2302;
+		rType = 0;
+	};
+	01C651FC13870E2100246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */;
+		name = "MemberItemCell.m: 72";
+		rLen = 127;
+		rLoc = 2262;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 1750;
+	};
+	01C6520113870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01C650811386A96000246089 /* TeamMembersTableViewController.h */;
+		name = "TeamMembersTableViewController.h: 11";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 450;
+		vrLoc = 0;
+	};
+	01C6520213870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 014C4D7213795D8800FC4162 /* MemberProfileTableViewController.m */;
+		name = "MemberProfileTableViewController.m: 76";
+		rLen = 0;
+		rLoc = 2050;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 539;
+	};
+	01C6520313870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0128EBB21379DAD40061E865 /* BaseTableViewController.m */;
+		name = "BaseTableViewController.m: 30";
+		rLen = 0;
+		rLoc = 766;
+		rType = 0;
+		vrLen = 699;
+		vrLoc = 1800;
+	};
+	01C6520413870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0128EBB11379DAD40061E865 /* BaseTableViewController.h */;
+		name = "BaseTableViewController.h: 18";
+		rLen = 0;
+		rLoc = 371;
+		rType = 0;
+		vrLen = 429;
+		vrLoc = 3;
+	};
+	01C6520513870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01BD571C136A1D5D00965646 /* MemberItemCell.m */;
+		name = "MemberItemCell.m: 72";
+		rLen = 128;
+		rLoc = 2262;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 1784;
+	};
+	01C6520613870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */;
+		name = "MembershipsTableViewController.h: 20";
+		rLen = 0;
+		rLoc = 487;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 0;
+	};
+	01C6520713870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
+		name = "MembershipsTableViewController.m: 60";
+		rLen = 0;
+		rLoc = 1957;
+		rType = 0;
+		vrLen = 726;
+		vrLoc = 1372;
+	};
+	01C6520813870EF600246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
+		name = "MembershipsTableViewController.m: 54";
+		rLen = 0;
+		rLoc = 1754;
+		rType = 0;
+		vrLen = 788;
+		vrLoc = 1363;
+	};
+	01C6520913870EF600246089 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 01C64D711383E49B00246089 /* DataModel.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 0;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					111.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {791, 220}}",
+						"{{796, 0}, {416, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1212, 220}}",
+						"{{0, 225}, {1212, 371}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {261, 220}}",
+						"{{266, 0}, {523, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					260.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-250, 0}, {1197, 356}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x203cf51c0>{name=User, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMAttribute: 0x20799fec0>{name=city, type=(null)}",
+			);
+		};
+	};
+	01C6520C13870F6200246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01C6507C1386A67200246089 /* Member.h */;
+		name = "Member.h: 17";
+		rLen = 50;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 535;
+		vrLoc = 30;
+	};
+	01C6520D13870F6200246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7F4E1369E1A800EFF625 /* Membership.h */;
+		name = "Membership.h: 17";
+		rLen = 0;
+		rLoc = 314;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 169;
+	};
+	01C6520E13870F6200246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
+		name = "MembershipsTableViewController.m: 54";
+		rLen = 0;
+		rLoc = 1754;
+		rType = 0;
+		vrLen = 788;
+		vrLoc = 1363;
+	};
+	01C6520F13870F6200246089 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */;
+		name = "MembershipsTableViewController.m: 54";
+		rLen = 0;
+		rLoc = 1768;
+		rType = 0;
+		vrLen = 789;
+		vrLoc = 1365;
+	};
+	01C6521013870F6200246089 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 01C64D711383E49B00246089 /* DataModel.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 0;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					111.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {791, 220}}",
+						"{{796, 0}, {416, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1212, 220}}",
+						"{{0, 225}, {1212, 371}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {261, 220}}",
+						"{{266, 0}, {523, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					260.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-250, 0}, {1197, 356}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x203cf51c0>{name=User, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMAttribute: 0x20799fec0>{name=city, type=(null)}",
+			);
+		};
+	};
 	01FB7EA71369D75E00EFF625 /* TableTest */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -30557,17 +31044,17 @@
 	};
 	01FB7EC11369D7F800EFF625 /* MembershipsTableViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {784, 299}}";
-			sepNavSelRange = "{563, 0}";
-			sepNavVisRange = "{0, 569}";
+			sepNavIntBoundsRect = "{{0, 0}, {784, 275}}";
+			sepNavSelRange = "{487, 0}";
+			sepNavVisRange = "{0, 492}";
 			sepNavWindowFrame = "{{15, 57}, {1212, 721}}";
 		};
 	};
 	01FB7EC21369D7F800EFF625 /* MembershipsTableViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {971, 1859}}";
-			sepNavSelRange = "{1883, 40}";
-			sepNavVisRange = "{1598, 674}";
+			sepNavSelRange = "{1768, 0}";
+			sepNavVisRange = "{1365, 789}";
 			sepNavWindowFrame = "{{68, 64}, {1212, 714}}";
 		};
 	};
@@ -30588,9 +31075,9 @@
 	};
 	01FB7F4E1369E1A800EFF625 /* Membership.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {784, 572}}";
+			sepNavIntBoundsRect = "{{0, 0}, {784, 559}}";
 			sepNavSelRange = "{314, 0}";
-			sepNavVisRange = "{222, 705}";
+			sepNavVisRange = "{169, 758}";
 			sepNavWindowFrame = "{{32, 64}, {1212, 714}}";
 		};
 	};
@@ -31712,6 +32199,24 @@
 			01C651F413870A0400246089 /* XDModelBookmark */ = 01C651F413870A0400246089 /* XDModelBookmark */;
 			01C651F713870A4800246089 /* PBXTextBookmark */ = 01C651F713870A4800246089 /* PBXTextBookmark */;
 			01C651F813870A4800246089 /* XDModelBookmark */ = 01C651F813870A4800246089 /* XDModelBookmark */;
+			01C651F913870E2100246089 /* PBXTextBookmark */ = 01C651F913870E2100246089 /* PBXTextBookmark */;
+			01C651FA13870E2100246089 /* PBXTextBookmark */ = 01C651FA13870E2100246089 /* PBXTextBookmark */;
+			01C651FB13870E2100246089 /* PBXTextBookmark */ = 01C651FB13870E2100246089 /* PBXTextBookmark */;
+			01C651FC13870E2100246089 /* PBXTextBookmark */ = 01C651FC13870E2100246089 /* PBXTextBookmark */;
+			01C6520113870EF600246089 /* PBXTextBookmark */ = 01C6520113870EF600246089 /* PBXTextBookmark */;
+			01C6520213870EF600246089 /* PBXTextBookmark */ = 01C6520213870EF600246089 /* PBXTextBookmark */;
+			01C6520313870EF600246089 /* PBXTextBookmark */ = 01C6520313870EF600246089 /* PBXTextBookmark */;
+			01C6520413870EF600246089 /* PBXTextBookmark */ = 01C6520413870EF600246089 /* PBXTextBookmark */;
+			01C6520513870EF600246089 /* PBXTextBookmark */ = 01C6520513870EF600246089 /* PBXTextBookmark */;
+			01C6520613870EF600246089 /* PBXTextBookmark */ = 01C6520613870EF600246089 /* PBXTextBookmark */;
+			01C6520713870EF600246089 /* PBXTextBookmark */ = 01C6520713870EF600246089 /* PBXTextBookmark */;
+			01C6520813870EF600246089 /* PBXTextBookmark */ = 01C6520813870EF600246089 /* PBXTextBookmark */;
+			01C6520913870EF600246089 /* XDModelBookmark */ = 01C6520913870EF600246089 /* XDModelBookmark */;
+			01C6520C13870F6200246089 /* PBXTextBookmark */ = 01C6520C13870F6200246089 /* PBXTextBookmark */;
+			01C6520D13870F6200246089 /* PBXTextBookmark */ = 01C6520D13870F6200246089 /* PBXTextBookmark */;
+			01C6520E13870F6200246089 /* PBXTextBookmark */ = 01C6520E13870F6200246089 /* PBXTextBookmark */;
+			01C6520F13870F6200246089 /* PBXTextBookmark */ = 01C6520F13870F6200246089 /* PBXTextBookmark */;
+			01C6521013870F6200246089 /* XDModelBookmark */ = 01C6521013870F6200246089 /* XDModelBookmark */;
 		};
 		sourceControlManager = 01FB7EB11369D77D00EFF625 /* Source Control */;
 		userBuildSettings = {

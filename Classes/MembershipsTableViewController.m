@@ -21,8 +21,6 @@
  */
 @implementation MembershipsTableViewController
 
-@synthesize headerTitle;
-
 - (id) init {
 	[super initWithStyle:UITableViewStyleGrouped]; //Grouped or plain style for table
 	
@@ -49,15 +47,17 @@
    
  - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {  
    [memberships removeAllObjects];
+   NSString* headerTitle = @"Teams";
    for (Membership* member in objects) {
 	  [memberships addObject:member];
 	  [[self navigationItem] setTitle:[member fullName]];
-	  self.headerTitle = [member fullName]; 
+	  headerTitle = [NSString stringWithFormat:@"%@%@", [member fullName], @"'s Teams"];
+ 
    }
 
    // make sure the view has the data 	 
    [[self tableView] reloadData];
-   // must be called here to ensure the headerView is reloaded      
+   // must be called here to ensure the headerView is reloaded after the data is obtained     
    [self buildTitleHeaderView:headerTitle];
 }  
    
