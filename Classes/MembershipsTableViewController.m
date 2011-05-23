@@ -79,10 +79,7 @@
 												  reuseIdentifier:@"UITableViewCell"] autorelease];
 	
 	Membership *member = [memberships objectAtIndex:[indexPath row]];
-	member.avatarImageName = @"icon.png";
 	[cell setMembership:member];
-	
-	
 	return cell;
 }	
 

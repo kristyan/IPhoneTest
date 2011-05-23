@@ -74,14 +74,10 @@
 }
 
 - (UIView*) buildTitleHeaderView:(NSString*)title {
-	UIView *containerView =
-	[[[UIView alloc]
-	  initWithFrame:CGRectMake(0, 0, 300, 60)]
-	 autorelease];
-	UILabel *headerLabel =
-	[[[UILabel alloc]
-	  initWithFrame:CGRectMake(10, 20, 300, 40)]
-	 autorelease];
+	UIView *containerView = [[[UIView alloc]
+	    initWithFrame:CGRectMake(0, 0, 300, 50)] autorelease];
+	UILabel *headerLabel = [[[UILabel alloc]
+	    initWithFrame:CGRectMake(10, 10, 300, 30)] autorelease];
 	headerLabel.text = title;
 	headerLabel.textColor = [UIColor whiteColor];
 	headerLabel.shadowColor = [UIColor blackColor];

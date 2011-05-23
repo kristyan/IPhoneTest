@@ -71,8 +71,15 @@
 	[teamNameLabel setText:[membership teamName]];
 	NSString *teamSportLocation = [NSString stringWithFormat:@"%@%@%@", [membership teamSport], @" - ", [membership teamLocation]];
 	[teamSportLocationLabel setText:teamSportLocation];
-	UIImage* image = [UIImage imageNamed:[membership avatarImageName]];
-	[imageView setImage:image];
+	
+	// Retreive the image from the webserver.
+	// TODO - look into a better way of doing this, as this may not be optimal.
+	NSURL *url = [NSURL URLWithString:[membership fullAvatarThumbURL]];
+	NSData *data = [NSData dataWithContentsOfURL:url];
+	UIImage *img = [[UIImage alloc] initWithData:data];
+	
+	[imageView setImage:img];
+	[img release];
 }	
 
 @end

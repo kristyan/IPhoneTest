@@ -104,7 +104,7 @@ static NSString* const AccessTokenHTTPHeaderField = @"X-USER-ACCESS-TOKEN";
 	NSArray *viewControllers = [NSArray arrayWithObjects:teamsNavController, 
 								dashboardNavController,
 								profileNavController, 
-								 nil];
+								nil];
 	
 	[tabBarController setViewControllers:viewControllers];
 	

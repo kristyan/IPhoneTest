@@ -18,9 +18,14 @@
 @property (nonatomic, retain) NSString* lastName;
 @property (nonatomic, retain) NSString* teamName;
 @property (nonatomic, retain) NSString* fullName;
+@property (nonatomic, retain) NSString* email;
+@property (nonatomic, retain) NSString* avatarThumbURL;
+
 /**
  * The numeric primary key of this User in the remote backend system
  */
 @property (nonatomic, retain) NSNumber* memberID;
+
+- (NSString*)fullAvatarThumbURL;
 
 @end

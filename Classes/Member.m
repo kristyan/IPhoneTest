@@ -7,6 +7,7 @@
 //
 
 #import "Member.h"
+#import "Environment.h"
 
 
 @implementation Member
@@ -15,7 +16,10 @@
 @synthesize lastName;
 @synthesize teamName;
 @synthesize fullName;
+@synthesize email;
 @synthesize memberID;
+@synthesize avatarThumbURL;
+
 
 #pragma mark RKObjectMappable methods
 
@@ -31,6 +35,8 @@
 			@"last_name", @"lastName",
 			@"team_name", @"teamName",
 			@"full_name", @"fullName",
+			@"avatar_thumb_url", @"avatarThumbURL",
+			@"email", @"email",
 			nil];
 }
 
@@ -58,12 +64,18 @@
 	return @"memberID";
 }
 
+- (NSString*)fullAvatarThumbURL {
+    return [NSString stringWithFormat:@"%@%@", TeamerBaseURL, avatarThumbURL];
+}
+
 - (void) dealloc {
 	[memberID release];
 	[firstName release];
 	[lastName release];
 	[teamName release];
 	[fullName release];
+	[avatarThumbURL release];
+	[email release];
 	[super dealloc];
 }
 

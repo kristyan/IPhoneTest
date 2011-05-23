@@ -58,7 +58,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
@@ -66,6 +66,15 @@
 	Member *member = [members objectAtIndex:[indexPath row]];
 	
 	cell.textLabel.text = [member fullName];
+	cell.detailTextLabel.text = [member email];
+	// Retreive the image from the webserver.
+	// TODO - look into a better way of doing this, as this may not be optimal.
+	NSURL *url = [NSURL URLWithString:[member fullAvatarThumbURL]];
+	NSData *data = [NSData dataWithContentsOfURL:url];
+	UIImage *img = [[UIImage alloc] initWithData:data];
+	
+	[cell.imageView setImage:img];
+	
 	return cell;
 }	
 

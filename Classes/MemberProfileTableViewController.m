@@ -77,8 +77,7 @@
 	
 	// set the navigation title
 	[[self navigationItem] setTitle:navTitle];
-	
- }
+}
 
 /*
 - (void)viewDidAppear:(BOOL)animated {
