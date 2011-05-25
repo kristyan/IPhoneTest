@@ -66,7 +66,6 @@ static User* currentUser = nil;
  * are not sending messages to nil
  */
 + (User*)currentUser {
-	
 	if (nil == currentUser) {
 		id userID = [[NSUserDefaults standardUserDefaults] objectForKey:UserCurrentUserIDDefaultsKey];
 		if (userID) {
@@ -168,7 +167,7 @@ static User* currentUser = nil;
 	}
 }
 
-// This Appears to be called when we have a connection error
+// called when we have a connection error
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError*)error {	
 	if ([objectLoader isPOST]) {
 		// Login failed
@@ -192,19 +191,8 @@ static User* currentUser = nil;
     return self.singleAccessToken != nil;
 }
 
-+ (NSEntityDescription*)entity {
-	
-	return [NSEntityDescription entityForName:@"User" inManagedObjectContext
-											 :[RKManagedObject managedObjectContext]];
-	
-} 
-
 - (void)dealloc {
 	_delegate = nil;
-	//[email release];
-	//[username release];
-	//[userID release];
-	//[singleAccessToken release];
 	[super dealloc];
 }
 

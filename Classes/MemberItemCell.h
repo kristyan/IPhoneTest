@@ -7,15 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MultiRowItemCell.h"
 
-@class Membership;
-
-@interface MemberItemCell : UITableViewCell {
-	UIImageView *imageView; 
-	UILabel *teamNameLabel;
-	UILabel *teamSportLocationLabel;
-    UILabel *organiserNameLabel;
+@interface MemberItemCell : MultiRowItemCell {
 }
 
-- (void) setMembership:(Membership *) membership;
+- (id) initWithReuseIdentifier:(NSString *)reuseIdentifier;
+
 @end

@@ -67,13 +67,14 @@
 	
 	cell.textLabel.text = [member fullName];
 	cell.detailTextLabel.text = [member email];
-	// Retreive the image from the webserver.
+	// Retrieve the image from the webserver.
 	// TODO - look into a better way of doing this, as this may not be optimal.
 	NSURL *url = [NSURL URLWithString:[member fullAvatarThumbURL]];
 	NSData *data = [NSData dataWithContentsOfURL:url];
 	UIImage *img = [[UIImage alloc] initWithData:data];
 	
 	[cell.imageView setImage:img];
+	[img release];
 	
 	return cell;
 }	

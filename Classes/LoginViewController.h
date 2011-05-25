@@ -12,12 +12,13 @@
 @interface LoginViewController : UIViewController <UserAuthenticationDelegate, UITextFieldDelegate> {
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;
-	IBOutlet UILabel *statusLabel;
+	IBOutlet UIImageView *logoImage;
 }
 
 @property (nonatomic, retain) UITextField *usernameField;
 @property (nonatomic, retain) UITextField *passwordField;
-@property (nonatomic, retain) UILabel *statusLabel;
+@property (nonatomic, retain) UIImageView *logoImage;
 
--(IBAction) loginClicked: (id) sender;
+-(void)showErrorAlert:(NSString*)errorMsg;
+
 @end

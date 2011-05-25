@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class MembershipsTableViewController;
-
 @interface TableTestAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 }

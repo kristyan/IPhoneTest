@@ -75,11 +75,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    
-	MemberItemCell *cell = [[[MemberItemCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-												  reuseIdentifier:@"UITableViewCell"] autorelease];
+	static NSString *MemberItemCellIdentifier = @"MemberItemCellIdentifier";
+	MultiRowItemCell *cell = (MemberItemCell*)[tableView dequeueReusableCellWithIdentifier:MemberItemCellIdentifier];
 	
-	Membership *member = [memberships objectAtIndex:[indexPath row]];
-	[cell setMembership:member];
+	if (!cell) {
+	    cell = [[[MemberItemCell alloc] initWithReuseIdentifier:MemberItemCellIdentifier ] autorelease];
+	}
+	
+	BaseModel *member = [memberships objectAtIndex:[indexPath row]];
+	
+	[cell setDataFromModel:member];
 	return cell;
 }	
 

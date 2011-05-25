@@ -16,7 +16,6 @@
 @interface Membership : BaseModel {
 }
 
-
 @property (nonatomic, retain) NSString* fullName;
 @property (nonatomic, retain) NSString* teamName;
 @property (nonatomic, retain) NSString* organiserName;

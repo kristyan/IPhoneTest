@@ -11,7 +11,6 @@
 
 
 @interface Member : BaseModel {
-
 }
 
 @property (nonatomic, retain) NSString* firstName;
